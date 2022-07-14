@@ -80,7 +80,7 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © 2022. Distributed by BSD 3-Clause License`,
+      copyright: `Copyright © ${new Date().getFullYear()}. Distributed by BSD 3-Clause License`,
     },
     prism: {
       theme: lightCodeTheme,
