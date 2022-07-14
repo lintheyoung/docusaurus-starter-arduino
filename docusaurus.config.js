@@ -5,15 +5,15 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "rm-controls documentation",
+  title: "dedemaker documentation",
   tagline: "",
-  url: "https://rm-controls.github.io",
+  url: "https://www.dedemaker.com",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "rm-controls",
-  projectName: "rm-controls.github.io",
+  organizationName: "dedemaker",
+  projectName: "dedemaker.com",
   trailingSlash: false,
   i18n: {
     defaultLocale: "zh-CN",
@@ -45,10 +45,10 @@ module.exports = {
     announcementBar: {
       id: "star",
       content:
-        '⭐️ If you like rm-controls, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/rm-controls/rm_control">rm_control</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/rm-controls/rm_controllers">rm_controllers</a> ! ⭐️',
+        '⭐️ If you like dedemaker, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/lintheyoung/dedemaker-projects">dedemaker-projects</a> and follow <a target="_blank" rel="noopener noreferrer" href="https://github.com/lintheyoung">me</a> ! ',
     },
     navbar: {
-      title: "rm-controls",
+      title: "DeDeMaker",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.png",
@@ -70,7 +70,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/rm-controls",
+          href: "https://github.com/lintheyoung/dedemaker-projects",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
@@ -80,7 +80,7 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()}. Distributed by BSD 3-Clause License`,
+      copyright: `Copyright © 2022. Distributed by BSD 3-Clause License`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -100,12 +100,12 @@ module.exports = {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            "https://github.com/rm-controls/rm-controls.github.io/tree/master",
+            "https://github.com/lintheyoung/docusaurus-starter-arduino/tree/main",
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            "https://github.com/rm-controls/rm-controls.github.io/tree/master",
+            "https://github.com/lintheyoung/docusaurus-starter-arduino/tree/main",
         },
         theme: {
           customCss: require.resolve("./src/scss/application.scss"),
