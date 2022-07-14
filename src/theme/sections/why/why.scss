@@ -1,0 +1,58 @@
+$why: (
+  why: (
+    mobile: (
+      padding: 0 0 55px,
+    ),
+    tablet: (
+      padding: 0 100px 100px,
+    ),
+  ),
+  image: (
+    mobile: (
+      display: block,
+      margin: 0 auto,
+      width: 80%,
+      height: 80%,
+    ),
+  ),
+  p: (
+    mobile: (
+      line-height: 1.7,
+      text-align: center,
+      color: $base-cape-color,
+    ),
+  ),
+  h1: (
+    mobile: (
+      font-size: 64px,
+      text-align: center,
+      color: $base-elephant-color,
+    )
+  ),
+  h2: (
+    mobile: (
+      text-align: center,
+      color: $base-elephant-color,
+    )
+  )
+);
+
+.shift-why {
+  @include responsive($why, why);
+
+  img {
+    @include responsive($why, image);
+  }
+
+  p {
+    @include responsive($why, p);
+  }
+
+  h1 {
+    @include responsive($why, h1);
+  }
+
+  h2 {
+    @include responsive($why, h2);
+  }
+}
