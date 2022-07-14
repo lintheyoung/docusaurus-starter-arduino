@@ -15,9 +15,9 @@ export default function Intro() {
     <div className={component}>
       <Container componentClass={component} size={"medium"}>
         <div className={`${component}__title`}>
-          rm-controls
+          DeDeMaker
           <br />
-          <Translate id="homepage.intro1">{"电控方案"}</Translate>
+          <Translate id="homepage.intro1">{"嵌入式教程"}</Translate>
         </div>
         <div className={`${component}__image`}>
           <img
@@ -26,14 +26,14 @@ export default function Intro() {
           />
           <img
             className={`${component}__image-img`}
-            src={useBaseUrl("img/homepage/swerve_robot.png")}
+            src={useBaseUrl("img/homepage/home_bg.png")}
           />
         </div>
         <div className={`${component}__content`}>
           {siteConfig.tagline}
           <Translate id="homepage.intro">
             {
-              "一套在 PC 上运行的无下位机、视控一体软件和配套硬件，基于 ros-controls 的硬件和仿真接口以及配套的控制器，用于开发 RoboMaster 机器人和高性能机器人。"
+              "面向项目的嵌入式入门学习方法"
             }
           </Translate>
         </div>
