@@ -190,7 +190,7 @@
     "message": "在 {highlighted} 中操控麦克纳姆轮以及舵轮底盘"
   },
   "homepage.getStarted.headingTitle": {
-    "message": "选择一种入门的方式",
+    "message": "选择一种想要学习的嵌入式平台",
     "description": "The Heading title"
   },
   "homepage.getStarted.headingSubtitle": {
@@ -198,9 +198,9 @@
     "description": "The Heading subtitle"
   },
   "homepage.intro1": {
-    "message": "电控方案"
+    "message": "系列教程"
   },
   "homepage.intro": {
-    "message": "一套在 PC 上运行的无下位机、视控一体软件和配套硬件，基于 ros-controls 的硬件和仿真接口以及配套的控制器，用于开发 RoboMaster 机器人和高性能机器人。"
+    "message": "Arduino With Class与ESP32(Coming Soon)系列教程。"
   }
 }
