@@ -184,10 +184,10 @@
     "description": "The title of the tag list page"
   },
   "homepage.getStarted.rmControls101": {
-    "message": "在仿真与实物中使用 {highlighted}"
+    "message": " {highlighted} with class系列教程"
   },
   "homepage.getStarted.gazeboChassis": {
-    "message": "在 {highlighted} 中操控麦克纳姆轮以及舵轮底盘"
+    "message": " {highlighted}(Coming Soon)系列教程"
   },
   "homepage.getStarted.headingTitle": {
     "message": "选择一种想要学习的嵌入式平台",

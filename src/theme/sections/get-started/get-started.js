@@ -12,7 +12,7 @@ export default function GetStarted() {
   const itemsData = [
     {
       bg: useBaseUrl("img/ic-theme-bg.svg"),
-      icon: useBaseUrl("img/homepage/arduino.png"),
+      icon: useBaseUrl("img/homepage/arduino_nano.png"),
       type: "theme",
       label: (
         <Translate
