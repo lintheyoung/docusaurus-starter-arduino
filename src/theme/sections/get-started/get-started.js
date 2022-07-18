@@ -12,38 +12,36 @@ export default function GetStarted() {
   const itemsData = [
     {
       bg: useBaseUrl("img/ic-theme-bg.svg"),
-      icon: useBaseUrl("img/homepage/3508.png"),
+      icon: useBaseUrl("img/homepage/arduino.png"),
       type: "theme",
       label: (
         <Translate
           id="homepage.getStarted.rmControls101"
           values={{
             highlighted: (
-              <span className="${component}__label-highlight">3508</span>
+              <span className="${component}__label-highlight">Arduino</span>
             ),
           }}
         >
-          {"在仿真与实物中使用 {highlighted}"}
+          {"Arduino With Class（类）教程 {highlighted}"}
         </Translate>
       ),
       link: useBaseUrl("quick_start/rm-controls_101"),
     },
     {
       bg: useBaseUrl("img/ic-plugin-bg.svg"),
-      icon: useBaseUrl(
-        "http://gazebosim.org/assets/logos/gazebo_vert_pos-faad8cc37ab336f850e549077ef5831e5098034532113b06328dfd70355fb8f7.svg"
-      ),
+      icon: useBaseUrl("img/homepage/esp32s3.png"),
       type: "plugin",
       label: (
         <Translate
           id="homepage.getStarted.gazeboChassis"
           values={{
             highlighted: (
-              <span className={`${component}__label-highlight`}>Gazebo</span>
+              <span className={`${component}__label-highlight`}>ESP32</span>
             ),
           }}
         >
-          {"在 {highlighted} 中操控麦克纳姆轮以及舵轮底盘"}
+          {"ESP32教程{highlighted}"}
         </Translate>
       ),
       link: useBaseUrl("quick_start/gazebo_chassis"),

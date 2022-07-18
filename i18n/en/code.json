@@ -194,7 +194,7 @@
     "description": "The Heading title"
   },
   "homepage.getStarted.headingSubtitle": {
-    "message": "你可以通过手上常用的 RM3508 电机学习如何在仿真和现实中使用 rm-controls；如果你觉得单个电机过于简单，可以尝试在仿真中操控麦克纳姆轮和舵轮底盘",
+    "message": "目前DeDeMaker开始更新Arduino Nano的相关教程，在后续会开始ESP32的教程。",
     "description": "The Heading subtitle"
   },
   "homepage.intro1": {
