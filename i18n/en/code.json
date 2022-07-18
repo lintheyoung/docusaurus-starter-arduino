@@ -184,7 +184,7 @@
     "description": "The title of the tag list page"
   },
   "homepage.getStarted.rmControls101": {
-    "message": " {highlighted} with class系列教程"
+    "message": " {highlighted} With Class系列课程"
   },
   "homepage.getStarted.gazeboChassis": {
     "message": " {highlighted}(Coming Soon)系列教程"
@@ -194,13 +194,13 @@
     "description": "The Heading title"
   },
   "homepage.getStarted.headingSubtitle": {
-    "message": "目前DeDeMaker开始更新Arduino Nano的相关教程，在后续会开始ESP32的教程。",
+    "message": "目前开始更新Arduino的相关课程，在后续会开始ESP32的课程。",
     "description": "The Heading subtitle"
   },
   "homepage.intro1": {
-    "message": "系列教程"
+    "message": "系列课程"
   },
   "homepage.intro": {
-    "message": "Arduino With Class与ESP32(Coming Soon)系列教程。"
+    "message": "Arduino With Class与ESP32(Coming Soon)系列课程。"
   }
 }
