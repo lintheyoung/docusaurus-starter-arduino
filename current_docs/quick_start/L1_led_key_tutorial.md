@@ -35,15 +35,41 @@ RGB灯模块是我们接触到的第一个模块，我们将会从这个模块�
 :::
 
 在使用Arduino点亮LED之前，我们应该先明白，一个LED应该是如何被点亮的？我们观察普通的LED灯时，可以看到其中具有大小端，其中大端代表的是LED的负极，而其中的小端则是代表其中的正极，如下图所示：
-![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220719165129.png)
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220719234843.png)
 
 而我们平时在使用时，值需要将LED的负极接入电池的负极，LED的正极，接入电池的正极即可，一般而言，一个LED的驱动电压为3V，我们可以使用两个5号干电池就能点亮，如下图所示：
-![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220719170009.png)
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220719234740.png)
 
 
 在开始使用RGB灯模块之前（RGB的意思就是Red Green Blue，即三原色），我们可以仔细观察一下我们手头上的Arduino板子，无论是Nano或是Uno，在对应13的引脚上都有连接上一个LED，如下图所示：
 
-我们先来点亮板子上的LED灯！在点亮GPIO 13上的LED之前，我们应该了解一下再Arduino的13号IO上如何与LED连接的，在这里我绘制了一个简单的电路图，可以看到其中LED真
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220719234927.png)
+
+我们先来点亮板子上的LED灯！在点亮GPIO 13上的LED之前，我们应该了解一下再Arduino的13号IO上如何与LED连接的，在这里我绘制了一个简单的电路图，可以看到其中LED的正极连接到了Arduino D13 IO上，而LED负极则是经过一个220欧姆的电阻，连接到了GND（也就是负极）上，由此我们其实可以非常近乎直觉般的知道，此时我们只要D13 IO上输出一个高电平（在Arduino中其输出的高电平为5V），我们就能点亮这个LED，只要输出一个低电平（0V），因为LED左右两端都是0V，故其就是为熄灭的状态。
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220720001155.png)
+
+好了，此时我们就已经知道使用Arduino点亮LED的大致思路了，我们需要：
+- 让Arduino GPIO处于输出状态；
+- 当GPIO输出为高电平时，LED点亮；
+- 当GPIO输出为低电平时，LED熄灭。
+
+现在我们开始使用代码完成上述的思路，代码我已经罗列如下，我们后面通过修改代码的方式希望可以让你感性的认识Arduino的代码是如何运行起来的。
+
+```arduino
+const int led_pin = 13; // 这里使用"led_pin"这一个别名去代指GPIO 13
+
+void setup(){
+  pinMode(led_pin, OUTPUT); // 设定led_pin(GPIO 13)为输出模式
+}
+
+void loop(){
+  digitalWrite(led_pin, HIGH); // 让led_pin为高电平
+  delay(1000); // 延时1000ms(毫秒, 1000ms = 1s)
+  digitalWrite(led_pin, LOW); // 让led_pin为低电平
+  delay(1000); // 延时1000ms
+}
+```
 
 ## Arduino IDE 的安装
 我们首先点击[https://www.arduino.cc](https://www.arduino.cc)进入Arduino IDE的官网：
