@@ -3,12 +3,12 @@ id: L0_install_tutorial
 sidebar_position: 5
 ---
 
-# Arduino With Class 教程--开发环境配置
+# L0-开发环境配置
 
 <!-- 标识符 -->
-:::danger
+<!-- :::danger
 本文还未完成。
-:::
+::: -->
 
 Hello，大家好，欢迎大家来到Arduino With Class课程，在本次课程中，我将会尝试通过十次课程，利用十个小项目，带大家入门学习Arduino的使用方法，和能够涵盖基本科创比赛需求相关传感器的使用方法。我会在每小节课程罗列出此小节所需要的原件清单，而本文档是作为教程视频的补充文档，详细的教学视频请参考[Bilibili](https://www.bilibili.com)，希望你可以在我的视频下方留言并讨论，祝你玩得开心~。
 
