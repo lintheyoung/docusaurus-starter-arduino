@@ -8,7 +8,7 @@
     "description": "The label for category overview in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.jump-start": {
-    "message": "快速入门",
+    "message": "Arduino With Class",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.dev-guide": {
