@@ -56,7 +56,7 @@ RGB灯模块是我们接触到的第一个模块，我们将会从这个模块�
 
 现在我们开始使用代码完成上述的思路，代码我已经罗列如下，我们后面通过修改代码的方式希望可以让你感性的认识Arduino的代码是如何运行起来的。
 
-```arduino
+```arduino title="led_blink.ino"
 const int led_pin = 13; // 这里使用"led_pin"这一个别名去代指GPIO 13
 
 void setup(){
