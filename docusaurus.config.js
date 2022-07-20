@@ -83,6 +83,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()}. Distributed by BSD 3-Clause License`,
     },
     prism: {
+      additionalLanguages: ['arduino'],
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
