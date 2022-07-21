@@ -80,7 +80,7 @@ const int led_pin = 13; // 左边led_pin代表了别名，而右边13则是代�
 就是相当于给GPIO 13取了一个别名，叫做“led_pin”，并且因为const(不变的)的原因，led_pin这个别名不能再去指代其他GPIO（比如现在你让led_pin = 12就是不允许的！）。
 
 :::caution
-在有些代码中，常会使用`#define led_pin 13`这样的写法去取代`const int led_pin = 13`，但是这样做是不符合代码规范，是不推荐的（感性了解即可，详细原因可{参考}(https://blog.csdn.net/yangchen1122/article/details/123142536))。
+在有些代码中，常会使用`#define led_pin 13`这样的写法去取代`const int led_pin = 13`，但是这样做是不符合代码规范，是不推荐的（感性了解即可，详细原因可{参考}(https://blog.csdn.net/yangchen1122/article/details/123142536)）。
 :::
 
 :::tip
@@ -103,7 +103,7 @@ const int led_pin = 13; // 左边led_pin代表了别名，而右边13则是代�
 ```arduino
 const int led_pin = 13; 
 ```
-我们给GPIO 13取了一个别名，叫做led_pin，这个别名的作用只是方便我们记忆写代码调用，在后面我们可以认为led_pin是完全等价的，你可以把所有出现led_pin的地方改为13。
+我们给GPIO 13取了一个别名，叫做`led_pin`，这个别名的作用只是方便我们记忆写代码调用，在后面我们可以认为led_pin是完全等价的，你可以把所有出现led_pin的地方改为13。
 
 在只执行一次的`void setup()`中，我们写:
 ```arduino
@@ -126,7 +126,115 @@ void loop(){
 
 :::tip
 什么是数字量？
+
+数字量代表二进制，即0和1，或是LOW和HIGH，它就只有两种状态，一般我们是用于对于比如开关是否按下的处理。与之相对应的则是模拟量，模拟量是一个连续的量，一般我们是用去代表传感器的电压值。
 :::
+
+OK，那目前我们已经了解如何点亮Arduino上的一个灯，这个时候回到我们点亮RGB灯，什么是RGB灯呢？RGB是`RED`，`GREEN`和`BLUE`的意思，也就是说，在一个RGB的LED灯里面其实有三个独立的LED，我们其实也可以从RGB灯的电路图上看到，如下图所示。
+
+我们此时看看下我们所买到的模块，上面标有G(Ground代表地)，R(代表Red)，G(代表Green)，B（代表Blue），为什么三个灯，每个灯本来都有正负极，但是只有四个控制的引脚呢？这是因为我们在设计模块的时候，一般都会把其中的Red、Green、Blue三个灯正极，或是负极统一连接到一起，如下图所示，我们在实际使用的时候，若模块是共阴，我们只需要把（若此时是所有的负极都连接到一起，我们一般把这种状态称之为共阴）其中的GND连接到我们Arduino上的GND即可，然后把各个灯的正极分别连接到Arduino上的各个GPIO上，如下图所示：
+
+在硬件连接完成之后，我们就应该思考如何去给三个灯去写代码？我们可以参考上面的做法，可以把三个灯对应的IO都设定为输出模式（OUTPUT），然后按照每隔一秒，依次点亮各个灯即可，如下所示：
+```arduino title="rgb_led_blink.ino"
+const int red_led_pin = 12;
+const int green_led_pin = 11;
+const int blue_led_pin = 10;
+
+void setup() {
+  pinMode(red_led_pin, OUTPUT);
+  pinMode(green_led_pin, OUTPUT);
+  pinMode(blue_led_pin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(blue_led_pin, LOW);
+  digitalWrite(red_led_pin, HIGH);
+  delay(1000);
+  digitalWrite(red_led_pin, LOW);
+  digitalWrite(green_led_pin, HIGH);
+  delay(1000);
+  digitalWrite(green_led_pin, LOW);
+  digitalWrite(blue_led_pin, HIGH);
+  delay(1000);
+}
+```
+
+编译、下载之后，我们可以看到RGB灯按照红色、绿色、蓝色依次点亮，确实能够实现我们需要的效果。不过我们其实也是方向说，我们在代码里面其实做了很多重复性的工作，假如我们有100个LED灯，难道我们还需要写100个`pinMode`去依次的设定吗？有没有什么更好的方法呢？当然有！这也就是为什么我们的课程叫做Arduino With Class的原因，我们可以采用Class（类）的方法去优化这个问题。什么是Class（类）呢？其实这是一种面对对象的方法，大家千万不要被「面对对象」这个名词给吓到了，我们在Arduino里面对于Class的方法是偏模板化的，不需要很多高深的知识，我们直接从RGB灯这个例子让大家了解什么是类！
+
+我们开始，在使用类前，我们需要先新建两个标签，一个是`xxx.cpp`而另一个则是`xxx.h`，按照如下图的方法新建：
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721144916.png)
+
+输入我们需要的名称，因为这里是对于LED的控制，我们称之为led，后缀一定是要为cpp：
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145014.png)
+
+然后我们在新建一个和上述cpp文件同样名字的文件，其后缀为.h：
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145457.png)
+
+接着，我们在led.cpp中写如下的内容：
+
+```arduino title="led.cpp"
+#include "led.h"
+
+LED::LED(int led_pin_input) {
+  led_pin = led_pin_input;
+  pinMode(led_pin, OUTPUT);
+}
+
+void LED::On() {
+  digitalWrite(led_pin, HIGH);
+}
+
+void LED::Off() {
+  digitalWrite(led_pin, LOW);
+}
+```
+
+在led.h文件中写如下的内容：
+
+```arduino title="led.h"
+#ifndef LED_h
+#define LED_h
+
+#include <Arduino.h>
+
+class LED {
+  private:
+    int led_pin; // 类中的私有变量
+
+  public:
+    LED(int led_in_pin); // 构造函数
+    void On(); // 类中的函数，功能：点亮LED
+    void Off(); // 类中的函数，功能：关闭LED
+};
+
+#endif
+```
+
+在`rgb_led_with_class.ino`中写代码如下：
+```arduino title="rgb_led_with_class.ino"
+#include "led.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
+
+LED red_led(12); // GPIO 12控制红色LED
+LED green_led(11); // GPIO 11控制绿色LED
+LED blue_led(10); // GPIO 10控制蓝色LED
+
+void setup() {
+  // 空
+}
+
+void loop() {
+  blue_led.Off(); // 关闭蓝色LED灯
+  red_led.On(); // 点亮红色LED
+  delay(1000);
+  red_led.Off();
+  green_led.On();
+  delay(1000);
+  green_led.Off();
+  blue_led.On();
+  delay(1000);
+} 
+```
+
 
 ## Arduino IDE 的安装
 我们首先点击[https://www.arduino.cc](https://www.arduino.cc)进入Arduino IDE的官网：
