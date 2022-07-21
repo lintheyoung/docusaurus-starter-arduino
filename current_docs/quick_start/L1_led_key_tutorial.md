@@ -71,6 +71,63 @@ void loop(){
 }
 ```
 
+这里是我们第一次接触到Arduino的代码，我们可以看到其主要是可以由三个部分所组成，其中的第一个部分`const int`，第二部分是`void setup()`部分，而第三部分则是`void loop`部分。
+
+我们先来了解一下`const int`是什么？单纯从英语单词来看，`const`是代表了“恒定的; 不变的;”，而`int`则是“integer”的缩写，代表了“整数”的意思。所以组合起来，它就代表了“不变的整数”的意思，在这里我们写：
+```arduino
+const int led_pin = 13; // 左边led_pin代表了别名，而右边13则是代表Arduino GPIO 13的意思。、
+```
+就是相当于给GPIO 13取了一个别名，叫做“led_pin”，并且因为const(不变的)的原因，led_pin这个别名不能再去指代其他GPIO（比如现在你让led_pin = 12就是不允许的！）。
+
+:::warn
+在有些代码中，常会使用`#define led_pin 13`这样的写法去取代`const int led_pin = 13`，但是这样做是不符合代码规范，是不推荐的（感性了解即可，详细原因可{参考}(https://blog.csdn.net/yangchen1122/article/details/123142536))。
+:::
+
+:::tip
+在第一次课中，我们只需要简单了解程序的组成，这里只讨论了int（整形类型），程序不仅仅只是由整形构成，对于各种变量类型，我们完全可以在后续项目中遇到了再学习，最后再汇总总结即可。
+:::
+
+而在第二部分中，`void setup`则是代表了一个Arduino中一个固定的函数。我们可以直接感性的认为在`void setup`中所有代码都是从上向下只执行一次，不用去细纠为什么只执行一次。一般都在设定只要告诉Arduino运行一次的代码时（比如GPIO IO输入/输出模式的时候），就放置在setup函数中。
+
+:::tip
+什么是函数？
+
+
+:::
+
+而第三部分`void loop()`函数，我们直接感性的认为在loop（环）中的所有代码像一个环一样，是循环往复的。
+
+在了解了Arduino的大致程序结构后，我们来看看代码究竟在做什么？
+
+我们在最开始的时：
+```arduino
+const int led_pin = 13; 
+```
+我们给GPIO 13取了一个别名，叫做led_pin，这个别名的作用只是方便我们记忆写代码调用，在后面我们可以认为led_pin是完全等价的，你可以把所有出现led_pin的地方改为13。
+
+在只执行一次的`void setup()`中，我们写:
+```arduino
+void setup(){
+  pinMode(led_pin, OUTPUT);
+}
+```
+在其中，pinMode是Arduino自带的函数，意思是设定led_pin为什么样的模式？可以设定为输出（OUTPUT），或是输入模式（INPUT），这里我们控制的led，明显要设定为输出（OUTPUT）。
+
+而在`void loop()`部分，我们写了：
+```arduino
+void loop(){
+  digitalWrite(led_pin, HIGH);
+  delay(1000);
+  digitalWrite(led_pin, LOW);
+  delay(1000);
+}
+```
+我们要关注其中的digitalWrite和delay部分，digital代表的是数字量，我们知道数字量有两种模式，0和1（或是LOW和HIGH），当我们需要让led_pin这个GPIO输出高电平时，直接写入HIGH，输出低电平时则写入LOW。
+
+:::tip
+什么是数字量？
+:::
+
 ## Arduino IDE 的安装
 我们首先点击[https://www.arduino.cc](https://www.arduino.cc)进入Arduino IDE的官网：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/Xnip2022-07-19_10-46-31.png)
