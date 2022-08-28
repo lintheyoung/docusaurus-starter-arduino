@@ -161,16 +161,16 @@ void loop() {
 
 编译、下载之后，我们可以看到RGB灯按照红色、绿色、蓝色依次点亮，确实能够实现我们需要的效果。不过我们其实也是方向说，我们在代码里面其实做了很多重复性的工作，假如我们有100个LED灯，难道我们还需要写100个`pinMode`去依次的设定吗？有没有什么更好的方法呢？当然有！这也就是为什么我们的课程叫做Arduino With Class的原因，我们可以采用Class（类）的方法去优化这个问题。什么是Class（类）呢？其实这是一种面对对象的方法，大家千万不要被「面对对象」这个名词给吓到了，我们在Arduino里面对于Class的方法是偏模板化的，不需要很多高深的知识，我们直接从RGB灯这个例子让大家了解什么是类！
 
-我们开始，在使用类前，我们需要先新建两个标签，一个是`xxx.cpp`而另一个则是`xxx.h`，按照如下图的方法新建：
+我们开始，在使用类前，我们需要先新建两个标签，一个是`xxx.cpp`，而另一个则是`xxx.h`，按照如下图的方法新建：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721144916.png)
 
-输入我们需要的名称，因为这里是对于LED的控制，我们称之为led，后缀一定是要为cpp：
+输入我们需要的名称，因为这里是对于LED的控制，我们称之为led，后缀一定是要为`.cpp`：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145014.png)
 
-然后我们在新建一个和上述cpp文件同样名字的文件，其后缀为.h：
+然后我们在新建一个和上述cpp文件同样名字的文件，其后缀为`.h`：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145457.png)
 
-接着，我们在led.cpp中写如下的内容：
+接着，我们在`led.cpp`中写如下的内容：
 
 ```arduino title="led.cpp"
 #include "led.h"
@@ -189,7 +189,7 @@ void LED::Off() {
 }
 ```
 
-在led.h文件中写如下的内容：
+在`led.h`文件中写如下的内容：
 
 ```arduino title="led.h"
 #ifndef LED_h
@@ -235,12 +235,15 @@ void loop() {
 } 
 ```
 
+好，那再我们学习了如何使用Arduino点亮LED后，我们会来学习一下如何使用Arduino去控制数码管，数码管我们可以理解为是由几个LED所组成的一个显示器，我们在使用时，就按照LED的控制方法来控制。
+
+我们按照如下进行连接，
 
 ## Arduino IDE 的安装
-我们首先点击[https://www.arduino.cc](https://www.arduino.cc)进入Arduino IDE的官网：
+我们首先点击[https://www.arduino.cc](https://www.arduino.cc)，进入Arduino IDE的官网：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/Xnip2022-07-19_10-46-31.png)
 
-然后点击其中的[Software](https://www.arduino.cc/en/software)进入文件的下载页面：
+然后点击其中的[Software](https://www.arduino.cc/en/software)，进入文件的下载页面：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/Xnip2022-07-19_10-48-03.png)
 
 而后根据我们所使用的系统选择对应的软件。对于**Windows**系统，有两个可选项，其中1）选项代表了它是一个安装包，2）则是代表了是一个免安装版本（即下即用），一般我们下载1）安装包即刻。对于**MacOS**系统，只要点击其中的**Mac OS X**即可。
