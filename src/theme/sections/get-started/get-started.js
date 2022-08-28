@@ -26,7 +26,7 @@ export default function GetStarted() {
           {"Arduino With Class（类）教程 {highlighted}"}
         </Translate>
       ),
-      link: useBaseUrl("quick_start/rm-controls_101"),
+      link: useBaseUrl("quick_start/L0_install_tutorial"),
     },
     {
       bg: useBaseUrl("img/ic-plugin-bg.svg"),
