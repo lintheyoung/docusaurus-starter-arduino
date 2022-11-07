@@ -10,7 +10,7 @@ sidebar_position: 6
 本文还未完成。
 :::
 
-Hello，大家好，在本次课程中，我们将会学习如何使用Arduino GPIO（General Purpose Input/Output，代表Arduino板子上输入输出引脚）实现对按键输入信号处理、输出我们需要的高低电平信号，并在最后我们会完成一个基于数码管的三位计时器（000~999），在本次课程中我们所需要的材料如下（可以点击直接跳转至淘宝，这里是没有任何带货的意思，只是方便大家选购）：
+Hello，大家好，在本次课程中，我们将会学习如何使用Arduino GPIO（General Purpose Input/Output，代表Arduino板子上输入输出引脚）实现对按键输入信号处理、输出我们需要的高低电平信号，并在最后我们会完成一个基于数码管的三位计时器（000~999），在本次课程中我们所需要的材料如下（可以点击直接跳转至淘宝，这里是没有任何带货的意思，只是方便大家选购），同时，我们此次课程也可使用Wokwi平台直接仿真，无需硬件。
 
 - [Arduino Nano或UNO * 1](https://item.taobao.com/item.htm?id=677378335092)；
 - [面包板 * 1](https://item.taobao.com/item.htm?id=522572405070)；
@@ -18,11 +18,12 @@ Hello，大家好，在本次课程中，我们将会学习如何使用Arduino G
 - [RGB灯模块 * 1](https://item.taobao.com/item.htm?id=585201123177)；
 - [按键输入模块 * 1](https://item.taobao.com/item.htm?id=564674095028)；
 - [杜邦线/面包板线若干 * 1](https://item.taobao.com/item.htm?id=522572825997)；
+- [在线仿真平台Wokwi](https://wokwi.com/)
 
 我们开始！
 
 :::tip
-可以看到，在本次课程中我们使用到的都是模块，而不是琐碎的电路原件，我们其实在平时项目或是科创比赛中，都基本上很少去从搭建一个一个的电路原件开始，而是更多的使用已经现成的模块。这里更加希望大家可以精力都放在如何写代码实现功能上，而不是去解决各种各样琐碎的电路问题。
+可以看到，在本次课程中我们使用到的都是模块，而不是琐碎的电路原件，我们其实在平时项目或是科创比赛中，都基本上很少去从搭建一个一个的电路原件开始，而是更多的使用已经现成的模块；而在艺术与工业领域，就完全不会使用零碎的元件去搭建了，这里更加希望大家可以精力都放在如何写代码实现功能上，而不是去解决各种各样琐碎的电路问题。
 :::
 
 ## RGB灯模块的使用
@@ -132,7 +133,11 @@ void loop(){
 
 OK，那目前我们已经了解如何点亮Arduino上的一个灯，这个时候回到我们点亮RGB灯，什么是RGB灯呢？RGB是`RED`，`GREEN`和`BLUE`的意思，也就是说，在一个RGB的LED灯里面其实有三个独立的LED，我们其实也可以从RGB灯的电路图上看到，如下图所示。
 
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/RGB_Pixel.jpg)
+
 我们此时看看下我们所买到的模块，上面标有G(Ground代表地)，R(代表Red)，G(代表Green)，B（代表Blue），为什么三个灯，每个灯本来都有正负极，但是只有四个控制的引脚呢？这是因为我们在设计模块的时候，一般都会把其中的Red、Green、Blue三个灯正极，或是负极统一连接到一起，如下图所示，我们在实际使用的时候，若模块是共阴，我们只需要把（若此时是所有的负极都连接到一起，我们一般把这种状态称之为共阴）其中的GND连接到我们Arduino上的GND即可，然后把各个灯的正极分别连接到Arduino上的各个GPIO上，如下图所示：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/RGB%E8%BF%9E%E6%8E%A5%E5%9B%BE_%E6%B0%B4%E5%8D%B0.png)
 
 在硬件连接完成之后，我们就应该思考如何去给三个灯去写代码？我们可以参考上面的做法，可以把三个灯对应的IO都设定为输出模式（OUTPUT），然后按照每隔一秒，依次点亮各个灯即可，如下所示：
 ```arduino title="rgb_led_blink.ino"
@@ -164,11 +169,17 @@ void loop() {
 我们开始，在使用类前，我们需要先新建两个标签，一个是`xxx.cpp`，而另一个则是`xxx.h`，按照如下图的方法新建：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721144916.png)
 
+在wokwi中，同样也可以也是新建一个标签：
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211071535190.png)
+
 输入我们需要的名称，因为这里是对于LED的控制，我们称之为led，后缀一定是要为`.cpp`：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145014.png)
 
 然后我们在新建一个和上述cpp文件同样名字的文件，其后缀为`.h`：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145457.png)
+
+再Wokwi中的建立效果如下：
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211072334413.png)
 
 接着，我们在`led.cpp`中写如下的内容：
 
@@ -235,9 +246,57 @@ void loop() {
 } 
 ```
 
+在Wokwi中也是同上述一样的操作，然后我们点击运行，可以看到效果是红色-绿色-蓝色交替切换：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211072354500.png)
+
+
 好，那再我们学习了如何使用Arduino点亮LED后，我们会来学习一下如何使用Arduino去控制数码管，数码管我们可以理解为是由几个LED所组成的一个显示器，我们在使用时，就按照LED的控制方法来控制。
 
-我们按照如下进行连接，
+我们还是简单学习一下数码管，一般一位数码管都是由8个“灯”所构成，我们在控制的时候，就只需要把上述的3个LED变成控制8个LED，我们一般使用“a、b、c、d、e、f、g、dp”去表示各个“灯”的位置：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/%E6%95%B0%E7%A0%81%E7%AE%A1%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+
+我们在使用了类之后，就可以非常快速的构建程序，我们还是将电路构建起来如下：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211080039564.png)
+
+在电路构建之后，我们开始写程序，思路开始和之前的RGB灯一样的，我们还是先尝试把所有灯点亮，我们将之前的ino代码修改如下，其他的cpp和h保持不变：
+在`digital_tube.ino`中写代码如下：
+```arduino title="digital_tube.ino"
+#include "led.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
+
+LED a(3); // GPIO 12控制红色LED
+LED b(4); // GPIO 11控制绿色LED
+LED c(5); // GPIO 10控制蓝色LED
+LED d(6); // GPIO 12控制红色LED
+LED e(7); // GPIO 11控制绿色LED
+LED f(8); // GPIO 10控制蓝色LED
+LED g(9); // GPIO 12控制红色LED
+
+void setup() {
+  // 空
+}
+
+void loop() {
+  a.On();
+  b.On();
+  c.On();
+  d.On();
+  e.On();
+  f.On();
+  g.On();
+  delay(1000);
+  a.Off();
+  b.Off();
+  c.Off();
+  d.Off();
+  e.Off();
+  f.Off();
+  g.Off();
+  delay(1000);
+} 
+```
 
 ## Arduino IDE 的安装
 我们首先点击[https://www.arduino.cc](https://www.arduino.cc)，进入Arduino IDE的官网：
