@@ -133,7 +133,7 @@ void loop(){
 
 OK，那目前我们已经了解如何点亮Arduino上的一个灯，这个时候回到我们点亮RGB灯，什么是RGB灯呢？RGB是`RED`，`GREEN`和`BLUE`的意思，也就是说，在一个RGB的LED灯里面其实有三个独立的LED，我们其实也可以从RGB灯的电路图上看到，如下图所示。
 
-![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/RGB_Pixel.jpg)
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/what_is_rgb.jpg)
 
 我们此时看看下我们所买到的模块，上面标有G(Ground代表地)，R(代表Red)，G(代表Green)，B（代表Blue），为什么三个灯，每个灯本来都有正负极，但是只有四个控制的引脚呢？这是因为我们在设计模块的时候，一般都会把其中的Red、Green、Blue三个灯正极，或是负极统一连接到一起，如下图所示，我们在实际使用的时候，若模块是共阴，我们只需要把（若此时是所有的负极都连接到一起，我们一般把这种状态称之为共阴）其中的GND连接到我们Arduino上的GND即可，然后把各个灯的正极分别连接到Arduino上的各个GPIO上，如下图所示：
 
@@ -250,6 +250,7 @@ void loop() {
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211072354500.png)
 
+## 数码管模块的使用
 
 好，那再我们学习了如何使用Arduino点亮LED后，我们会来学习一下如何使用Arduino去控制数码管，数码管我们可以理解为是由几个LED所组成的一个显示器，我们在使用时，就按照LED的控制方法来控制。
 
@@ -297,6 +298,20 @@ void loop() {
   delay(1000);
 } 
 ```
+在运行代码之后，我们可以看到数码管开始闪烁，不过我们可以发现一个问题，在On的时候，灯是灭的，在Off的时候，灯是亮的，这是因为和之前的RGB模块相比，RGB模块是共阴的，而我们此时使用的数码管则是共阳的，这个时候，我们就可以直接修改class中的代码，修正这个bug，只要把On和Off的函数对换一下就可以啦！
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211081122905.png)
+
+在这个时候，或许我们已经可以感受到使用class的便利之处，一切皆是接口与模板，修改模板就能修改一切~！
+
+这个时候，我们就可以开始来控制数码管来真正显示数字了，各个数字其实就是控制刚刚提到的“a、b、c、d、e、f、g、dp”点亮顺序即可，我们还是和刚才一样，新建digitaltube.cpp和digitaltube.h文件，我们代码如下：
+
+
+最后运行效果如下：
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211081320183.png)
+
+好的嘞，我们已经学习了如何控制IO的输出，有了输出，当然就还有输入，我们来学习一下如何使用按键，并制作一个只有一位的计数器，Let's start!
+
 
 ## Arduino IDE 的安装
 我们首先点击[https://www.arduino.cc](https://www.arduino.cc)，进入Arduino IDE的官网：
