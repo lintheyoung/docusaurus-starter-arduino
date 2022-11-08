@@ -264,6 +264,7 @@ void loop() {
 
 在电路构建之后，我们开始写程序，思路开始和之前的RGB灯一样的，我们还是先尝试把所有灯点亮，我们将之前的ino代码修改如下，其他的cpp和h保持不变：
 在`digital_tube.ino`中写代码如下：
+
 ```arduino title="digital_tube.ino"
 #include "led.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
 
@@ -304,8 +305,280 @@ void loop() {
 
 在这个时候，或许我们已经可以感受到使用class的便利之处，一切皆是接口与模板，修改模板就能修改一切~！
 
-这个时候，我们就可以开始来控制数码管来真正显示数字了，各个数字其实就是控制刚刚提到的“a、b、c、d、e、f、g、dp”点亮顺序即可，我们还是和刚才一样，新建digitaltube.cpp和digitaltube.h文件，我们代码如下：
+这个时候，我们就可以开始来控制数码管来真正显示数字了，各个数字其实就是控制刚刚提到的“a、b、c、d、e、f、g、dp”点亮顺序即可，我们还是和刚才一样，新建digitaltube.cpp和digitaltube.h文件，我们代码最终修改如下（全部代码可从这里下载）：
 
+```arduino title="digital_tube.ino"
+#include "digitaltube.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
+
+DIGITALTUBE digital_tube(3, 4, 5, 6, 7, 8, 9);
+
+void setup() {
+  // 空
+}
+
+void loop() {
+  for(int i = 0; i <= 9; i++){
+    digital_tube.DisplayNum(i);
+    delay(1000);
+  }
+} 
+```
+
+```arduino title="led.cpp"
+#include "led.h"
+
+LED:: LED(){
+  // 空，默认构造函数
+}
+
+void LED::SetPin(int led_pin_input) {
+  led_pin = led_pin_input;
+  pinMode(led_pin, OUTPUT);
+}
+
+void LED::Off() {
+  digitalWrite(led_pin, HIGH);
+}
+
+void LED::On() {
+  digitalWrite(led_pin, LOW);
+}
+```
+
+```arduino title="led.h"
+#ifndef LED_h
+#define LED_h
+
+#include <Arduino.h>
+
+class LED {
+  private:
+    int led_pin; // 类中的私有变量
+
+  public:
+    LED(); // 使用默认的构造函数
+    void SetPin(int led_pin_inpu); // 设置LED的输出IO
+    void On(); // 类中的函数，功能：点亮LED
+    void Off(); // 类中的函数，功能：关闭LED
+};
+
+#endif
+```
+
+```arduino title="digitaltube.cpp"
+#include "digitaltube.h"
+#include "led.h"
+
+DIGITALTUBE::DIGITALTUBE(int a_pin_in, int b_pin_in, int c_pin_in, int d_pin_in, int e_pin_in, int f_pin_in, int g_pin_in){
+  a_pin = a_pin_in;
+  b_pin = b_pin_in;
+  c_pin = c_pin_in;
+  d_pin = d_pin_in;
+  e_pin = e_pin_in;
+  f_pin = f_pin_in;
+  g_pin = g_pin_in;
+
+  a_led.SetPin(a_pin);
+  b_led.SetPin(b_pin);
+  c_led.SetPin(c_pin);
+  d_led.SetPin(d_pin);
+  e_led.SetPin(e_pin);
+  f_led.SetPin(f_pin);
+  g_led.SetPin(g_pin);
+}
+
+void DIGITALTUBE::AllOn() {
+  a_led.On();
+  b_led.On();
+  c_led.On();
+  d_led.On();
+  e_led.On();
+  f_led.On();
+  g_led.On();
+}
+
+void DIGITALTUBE::AllOff() {
+  a_led.Off();
+  b_led.Off();
+  c_led.Off();
+  d_led.Off();
+  e_led.Off();
+  f_led.Off();
+  g_led.Off();
+}
+
+void DIGITALTUBE::Display0() {
+  AllOff();
+  a_led.On();
+  b_led.On();
+  c_led.On();
+  d_led.On();
+  e_led.On();
+  f_led.On();
+}
+
+void DIGITALTUBE::Display1() {
+  AllOff();
+  b_led.On();
+  c_led.On();
+}
+
+void DIGITALTUBE::Display2() {
+  AllOff();
+  a_led.On();
+  b_led.On();
+  g_led.On();
+  d_led.On();
+  e_led.On();
+}
+
+void DIGITALTUBE::Display3() {
+  AllOff();
+  a_led.On();
+  b_led.On();
+  c_led.On();
+  d_led.On();
+  g_led.On();
+}
+
+void DIGITALTUBE::Display4() {
+  AllOff();
+  b_led.On();
+  c_led.On();
+  g_led.On();
+  f_led.On();
+}
+
+void DIGITALTUBE::Display5() {
+  AllOff();
+  a_led.On();
+  g_led.On();
+  c_led.On();
+  d_led.On();
+  f_led.On();
+}
+
+void DIGITALTUBE::Display6() {
+  AllOff();
+  a_led.On();
+  g_led.On();
+  c_led.On();
+  d_led.On();
+  e_led.On();
+  f_led.On();
+}
+
+void DIGITALTUBE::Display7() {
+  AllOff();
+  a_led.On();
+  b_led.On();
+  c_led.On();
+}
+
+void DIGITALTUBE::Display8() {
+  AllOff();
+  a_led.On();
+  b_led.On();
+  c_led.On();
+  d_led.On();
+  e_led.On();
+  f_led.On();
+  g_led.On();
+}
+
+void DIGITALTUBE::Display9() {
+  AllOff();
+  a_led.On();
+  b_led.On();
+  c_led.On();
+  d_led.On();
+  f_led.On();
+  g_led.On();
+}
+
+void DIGITALTUBE::DisplayNum(int num){
+  switch(num){
+    case 0:
+      Display0();
+      break;
+    case 1:
+      Display1();
+      break;
+    case 2:
+      Display2();
+      break;
+    case 3:
+      Display3();
+      break;
+    case 4:
+      Display4();
+      break;
+    case 5:
+      Display5();
+      break;
+    case 6:
+      Display6();
+      break;
+    case 7:
+      Display7();
+      break;
+    case 8:
+      Display8();
+      break;
+    case 9:
+      Display9();
+      break;
+  }
+}
+```
+
+```arduino title="digitaltube.h"
+#ifndef DIGITALTUBE_h
+#define DIGITALTUBE_h
+
+#include <Arduino.h>
+#include "led.h"
+
+// 继承LED
+class DIGITALTUBE{
+  private:
+    int a_pin;
+    int b_pin;
+    int c_pin;
+    int d_pin;
+    int e_pin;
+    int f_pin;
+    int g_pin;
+
+    // 这个主要是希望每个函数都可以被访问到
+    // 新建各个灯的对象
+    LED a_led;
+    LED b_led;
+    LED c_led;
+    LED d_led;
+    LED e_led;
+    LED f_led;
+    LED g_led;
+
+  public:
+    DIGITALTUBE(int a_pin_in, int b_pin_in, int c_pin_in, int d_pin_in, int e_pin_in, int f_pin_in, int g_pin_in); // 构造函数
+    void AllOn();
+    void AllOff();
+    void Display0();
+    void Display1();
+    void Display2();
+    void Display3();
+    void Display4();
+    void Display5();
+    void Display6();
+    void Display7();
+    void Display8();
+    void Display9();
+    void DisplayNum(int num);
+};
+
+#endif
+```
 
 最后运行效果如下：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211081326890.png)
