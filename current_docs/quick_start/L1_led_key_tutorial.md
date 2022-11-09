@@ -588,6 +588,164 @@ class DIGITALTUBE{
 ## 按键的使用
 好的嘞，我们已经学习了如何控制IO的输出，有了输出，当然就还有输入，我们来学习一下如何使用按键，并制作一个只有一位的计数器，Let's start!
 
+对于Arduino来说，输入我们可以被简单的定义为四个方面，高电平输入、低电平输入、上升沿输入、下降沿输入，我们可以用下图来简单的解释：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/what_is_digitalread.png)
+
+在此次的学习中，我们只需要检测输入的IO（引脚）是属于高电平，或是低电平即可，我们还是来到其中的电路部分，我们先来检测按钮是否按下：
+
+我们先简单了解一下按键的长什么样子，可以看到按键的引脚（1）和（2）是保持联通的姿态，而（3）和（4）也是保持联通的状态，在按下按键之后，（1）（2）（3）（4）四个引脚将会全部保持联通的姿态，我们一般在连接的时候，都是选择连接按键的（1）和（3），或是（2）和（4）部分，我们测试的电路图连接如下，使用Wokwi绘制：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091416867.png)
+
+我们先来写个简单的小程序测试一按钮的输入，我们可以看到现在按钮再被按下之后呢，Arduino UNO上的3号IO就会被连接到GND（也就是负极上面），被按下之后，此时就是一个低电平的状态，代码实现检测如下，串口会直接打印检测为高低电平：
+
+```arduino title="key_dete.ino"
+const int key_input = 3;
+
+void setup(){
+  pinMode(key_input, INPUT);
+}
+
+void loop(){
+  Serial.println(digitalRead(key_input));
+}
+```
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091427406.png)
+
+我们可以观察到，在被按下按键时，输出的结果为0，但是在松开按钮之后呢，其结果有时为0，有时为1，是一个飘忽不定的状态，这是为什么呢？我们从电路图上可以大致分析一下，在没有按下的时候，3号IO就是属于悬空状态，在按下之后，3号IO就被连接到GND上。
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/why_key_not_stable.png)
+
+这个时候要怎么办呢？Arduino在内部实现了内部上拉，什么是内部上拉呢？
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/what_is_the_upper_re.png)
+
+可以从图中看到，在没有按下的时候，电压则是从5V通过电阻（一般我们会给10K）流向3号IO上，此时在没有按下的时候，3号IO就是处在高电平状态；在按下之后，有两股电压分别从GND（0V）和5V流向中间，不过5V是需要经过电阻，阻力比较大，所以GND占用优势，此时3号IO是0V状态，为低电平状态：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/5V_GND_PK.png)
+
+我们可以在代码中直接实现上拉电阻，而无需电路上做上面什么改动，我们将代码修改如下：
+
+```arduino title="key_dete_with_pullup.ino"
+const int key_input = 3;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(key_input, INPUT_PULLUP);
+}
+
+void loop(){
+  Serial.println(digitalRead(key_input));
+}
+```
+执行的结果如下，在按下时候，显示0；在没有按下时候，就是显示1。
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/press_and_unpress.png)
+
+好的，那此时我们已经知道如何使用按键了，我们还是和之前的LED控制一样，将按键封装成为一个类class，我们还是和之前LED一样，新建一个key.cpp和key.h两个文件，如下图所示：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091614865.png)
+
+我们在key.cpp中写代码如下：
+
+```arduino title="key.cpp"
+#include "key.h"
+
+KEY:: KEY(){
+  // 空，默认构造函数
+}
+
+KEY:: KEY(int key_pin_input){
+  key_pin = key_pin_input;
+  pinMode(key_pin, INPUT_PULLUP);
+}
+
+void KEY::SetPin(int key_pin_input) {
+  key_pin = key_pin_input;
+  pinMode(key_pin, INPUT_PULLUP);
+}
+
+boolean KEY:: GetState(){
+  return digitalRead(key_pin);
+}
+```
+
+在key.h中写代码如下：
+
+```arduino title="key.h"
+#ifndef KEY_h
+#define KEY_h
+
+#include <Arduino.h>
+
+class KEY {
+  private:
+    int key_pin; // 类中的私有变量
+
+  public:
+    KEY(); // 使用默认的构造函数
+    KEY(int key_pin_input);
+    void SetPin(int key_pin_input); // 设置LED的输出IO
+    boolean GetState();
+};
+
+#endif
+```
+
+```arduino title="key_dete_with_pullup.ino"
+#include "key.h"
+
+KEY key_1(3);
+
+void setup(){
+  Serial.begin(9600);
+}
+
+void loop(){
+  Serial.println(key_1.GetState());
+}
+```
+我们可以看到和之前有着一样的效果，但是现在在ino中更加的简洁。
+
+接下来我们就来完成一个具有启停按钮的一位数码管计时器，在按下的时候，数码管开始计时，在没有按下的时候，就停止下来~~。
+
+我们在之前的数码管的电路上，接入一个按钮，把按钮接到2号IO上，整体设计如下：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091639996.png)
+
+我们之前的代码都是基于类class，在移植或是新硬件加入的时候，就会变得非常方便，我们将刚刚使用的key.h和key.cpp合并到现在这个项目中，标签如下所示：
+
+![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091646002.png)
+
+我们此时将digital_tube.ino中的代码修改如下：
+
+```arduino title="digital_tube.ino"
+#include "digitaltube.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
+#include "key.h"
+
+DIGITALTUBE digital_tube(3, 4, 5, 6, 7, 8, 9);
+KEY key_1(2);
+
+void setup() {
+  // 空
+}
+
+void loop() {
+  for(int i = 0; i <= 9; i++){
+    while(key_1.GetState()); // 要是按下了就在这里卡住for
+    digital_tube.DisplayNum(i);
+    delay(1000);
+  }
+} 
+```
+
+此时我们按下按钮，数码管就会开始计时，松开按钮时就停止下来。
 ## 总结与作业
 ### 学到了什么？
 ### 作业
+#### Simple
+修改最后一个项目中的digital_tube.ino代码，使得按下一次时候，就自动开始计时，再按下一次，就停止计时。
+#### Hard
+将digital_tube.ino代码，修改成为两位数码管，实现从00~99的计时。
