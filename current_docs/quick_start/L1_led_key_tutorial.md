@@ -10,7 +10,7 @@ sidebar_position: 6
 本文还未完成。
 :::
 
-Hello，大家好，在本次课程中，我们将会学习如何使用Arduino GPIO（General Purpose Input/Output，代表Arduino板子上输入输出引脚）实现对按键输入信号处理、输出我们需要的高低电平信号，并在最后我们会完成一个基于数码管的三位计时器（000~999），在本次课程中我们所需要的材料如下（可以点击直接跳转至淘宝，这里是没有任何带货的意思，只是方便大家选购），同时，我们此次课程也可使用Wokwi平台直接仿真，无需硬件。
+Hello，大家好，在本次课程中，我们将会学习如何使用Arduino GPIO（General Purpose Input/Output，代表Arduino板子上输入输出引脚）实现对按键输入信号处理、输出我们需要的高低电平信号，并在最后我们会完成一个基于数码管的一位计时器（0~9），在本次课程中我们所需要的材料如下（可以点击直接跳转至淘宝，这里是没有任何带货的意思，只是方便大家选购），同时，我们此次课程也可使用[Wokwi](https://wokwi.com/)平台直接仿真，无需硬件。
 
 - [Arduino Nano或UNO * 1](https://item.taobao.com/item.htm?id=677378335092)；
 - [面包板 * 1](https://item.taobao.com/item.htm?id=522572405070)；
@@ -23,7 +23,7 @@ Hello，大家好，在本次课程中，我们将会学习如何使用Arduino G
 我们开始！
 
 :::tip
-可以看到，在本次课程中我们使用到的都是模块，而不是琐碎的电路原件，我们其实在平时项目或是科创比赛中，都基本上很少去从搭建一个一个的电路原件开始，而是更多的使用已经现成的模块；而在艺术与工业领域，就完全不会使用零碎的元件去搭建了，这里更加希望大家可以精力都放在如何写代码实现功能上，而不是去解决各种各样琐碎的电路问题。
+可以看到，在本次课程中我们使用到的都是模块，而不是琐碎的电路原件，我们其实在平时项目或是科创比赛中，都基本上很少去从搭建一个一个的电路原件开始，而是更多的使用已经现成的模块；而在艺术与工业领域，一般我们会直接采用PLC构建，这时就更加无需关注硬件本身了，这里更加希望大家可以精力都放在如何写代码实现功能上，而不是去解决各种各样琐碎的电路问题。
 :::
 
 ## RGB灯模块的使用
@@ -46,7 +46,7 @@ RGB灯模块是我们接触到的第一个模块，我们将会从这个模块�
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220719234927.png)
 
-我们先来点亮板子上的LED灯！在点亮GPIO 13上的LED之前，我们应该了解一下再Arduino的13号IO上如何与LED连接的，在这里我绘制了一个简单的电路图，可以看到其中LED的正极连接到了Arduino D13 IO上，而LED负极则是经过一个220欧姆的电阻，连接到了GND（也就是负极）上，由此我们其实可以非常近乎直觉般的知道，此时我们只要D13 IO上输出一个高电平（在Arduino中其输出的高电平为5V），我们就能点亮这个LED，只要输出一个低电平（0V），因为LED左右两端都是0V，故其就是为熄灭的状态。
+我们先来点亮板子上的LED灯！我们先了解一下在Arduino的13号IO上如何与LED连接的，在这里绘制了一个简单的电路图，可以看到其中LED的正极连接到了Arduino D13 IO上，而LED负极则是经过一个220欧姆的电阻（一般我们的LED都是3V，这个220欧姆电阻一般我们叫做限流电阻，5V接入LED，一般我们选择阻值在220欧~1000欧左右），连接到了GND（也就是负极）上，由此我们其实可以非常近乎直觉般的知道，此时我们只要D13 IO上输出一个高电平（在Arduino中其输出的高电平为5V），我们就能点亮这个LED，只要输出一个低电平（0V），因为LED左右两端都是0V，故其就是为熄灭的状态。
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220720001155.png)
 
@@ -81,22 +81,22 @@ const int led_pin = 13; // 左边led_pin代表了别名，而右边13则是代�
 就是相当于给GPIO 13取了一个别名，叫做“led_pin”，并且因为const(不变的)的原因，led_pin这个别名不能再去指代其他GPIO（比如现在你让led_pin = 12就是不允许的！）。
 
 :::caution
-在有些代码中，常会使用`#define led_pin 13`这样的写法去取代`const int led_pin = 13`，但是这样做是不符合代码规范，是不推荐的（感性了解即可，详细原因可{参考}(https://blog.csdn.net/yangchen1122/article/details/123142536)）。
+在有些代码中，常会使用`#define led_pin 13`这样的写法去取代`const int led_pin = 13`，但是这样做是不符合代码规范，是不推荐的（感性了解即可，详细原因可[参考](https://blog.csdn.net/yangchen1122/article/details/123142536)）。
 :::
 
 :::tip
-在第一次课中，我们只需要简单了解程序的组成，这里只讨论了int（整形类型），程序不仅仅只是由整形构成，对于各种变量类型，我们完全可以在后续项目中遇到了再学习，最后再汇总总结即可。
+在第一次课中，我们只需要简单了解程序的组成，这里只讨论了`int`（整形类型），程序不仅仅只是由整形构成，对于各种变量类型，我们完全可以在后续项目中遇到了再学习，最后再汇总总结即可。
 :::
 
-而在第二部分中，`void setup`则是代表了一个Arduino中一个固定的函数。我们可以直接感性的认为在`void setup`中所有代码都是从上向下只执行一次，不用去细纠为什么只执行一次。一般都在设定只要告诉Arduino运行一次的代码时（比如GPIO IO输入/输出模式的时候），就放置在setup函数中。
+而在第二部分中，`void setup`则是代表了一个Arduino中一个固定的函数。我们可以直接感性的认为在`void setup`中所有代码都是从上向下只执行一次，所以我们一般在这其中去初始化一些设备，比如设定某个IO是输入输出模式，设定某些设备的地址等等一些只要告知一次就行的信息。一般都在设定只要告诉Arduino运行一次的代码时（比如GPIO IO输入/输出模式的时候），就放置在setup函数中。
 
 :::tip
 什么是函数？
 
-
+这里你可以认为函数就是一个独立自主代码块，我们可以输入变量到这个代码块中，这个代码块会计算之后返回一个数值回来；不过函数的输入输出不是必要的，就比如我们刚刚的`void setup`和`void loop`其实就是没有输入输出的函数。
 :::
 
-而第三部分`void loop()`函数，我们直接感性的认为在loop（环）中的所有代码像一个环一样，是循环往复的。
+而第三部分`void loop()`函数，我们直接感性的认为在`loop`（环）中的所有代码像一个环一样，是循环往复的。
 
 在了解了Arduino的大致程序结构后，我们来看看代码究竟在做什么？
 
@@ -104,7 +104,7 @@ const int led_pin = 13; // 左边led_pin代表了别名，而右边13则是代�
 ```arduino
 const int led_pin = 13; 
 ```
-我们给GPIO 13取了一个别名，叫做`led_pin`，这个别名的作用只是方便我们记忆写代码调用，在后面我们可以认为led_pin是完全等价的，你可以把所有出现led_pin的地方改为13。
+我们给GPIO 13取了一个别名，叫做`led_pin`，这个别名的作用只是方便我们记忆写代码调用，在后面我们可以认为led_pin是和13完全等价的，你可以把所有出现led_pin的地方改为13。
 
 在只执行一次的`void setup()`中，我们写:
 ```arduino
@@ -123,7 +123,7 @@ void loop(){
   delay(1000);
 }
 ```
-我们要关注其中的digitalWrite和delay部分，digital代表的是数字量，我们知道数字量有两种模式，0和1（或是LOW和HIGH），当我们需要让led_pin这个GPIO输出高电平时，直接写入HIGH，输出低电平时则写入LOW。
+我们要关注其中的digitalWrite和delay部分，digital代表的是数字量，我们知道数字量有两种模式，0和1（或是LOW和HIGH），当我们需要让led_pin这个GPIO输出高电平时，直接写入（`Write`）HIGH，输出低电平时则写入（`Write`）LOW。
 
 :::tip
 什么是数字量？
@@ -135,11 +135,17 @@ OK，那目前我们已经了解如何点亮Arduino上的一个灯，这个时�
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/what_is_rgb.jpg)
 
-我们此时看看下我们所买到的模块，上面标有G(Ground代表地)，R(代表Red)，G(代表Green)，B（代表Blue），为什么三个灯，每个灯本来都有正负极，但是只有四个控制的引脚呢？这是因为我们在设计模块的时候，一般都会把其中的Red、Green、Blue三个灯正极，或是负极统一连接到一起，如下图所示，我们在实际使用的时候，若模块是共阴，我们只需要把（若此时是所有的负极都连接到一起，我们一般把这种状态称之为共阴）其中的GND连接到我们Arduino上的GND即可，然后把各个灯的正极分别连接到Arduino上的各个GPIO上，如下图所示：
+我们此时看看下我们所买到的模块，上面标有G(Ground代表地)，R(代表Red)，G(代表Green)，B（代表Blue），为什么三个灯，每个灯本来都有正负极，但是只有四个控制的引脚呢？这是因为我们在设计模块的时候，一般都会把其中的Red、Green、Blue三个灯正极，或是负极统一连接到一起，如上图所示，我们在实际使用的时候，若模块是共阴（共阴意思就是把所有的负极都连接到一起），我们只需要把其中的GND连接到我们Arduino上的GND即可，然后把各个灯的正极通过电阻分别连接到Arduino上的各个GPIO上，在Wokwi连接如下图所示：
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/RGB%E8%BF%9E%E6%8E%A5%E5%9B%BE_%E6%B0%B4%E5%8D%B0.png)
 
-在硬件连接完成之后，我们就应该思考如何去给三个灯去写代码？我们可以参考上面的做法，可以把三个灯对应的IO都设定为输出模式（OUTPUT），然后按照每隔一秒，依次点亮各个灯即可，如下所示：
+而假如使用实际RGB灯模块，则连接如下：
+
+:::danger
+到时补充图片
+:::
+
+在硬件连接完成之后，我们就应该思考如何去给三个灯去写代码？我们可以参考上面的做法，可以把三个灯对应的IO都设定为输出模式（`OUTPUT`），然后按照每隔一秒，依次点亮各个灯即可，如下所示：
 ```arduino title="rgb_led_blink.ino"
 const int red_led_pin = 12;
 const int green_led_pin = 11;
@@ -164,21 +170,21 @@ void loop() {
 }
 ```
 
-编译、下载之后，我们可以看到RGB灯按照红色、绿色、蓝色依次点亮，确实能够实现我们需要的效果。不过我们其实也是方向说，我们在代码里面其实做了很多重复性的工作，假如我们有100个LED灯，难道我们还需要写100个`pinMode`去依次的设定吗？有没有什么更好的方法呢？当然有！这也就是为什么我们的课程叫做Arduino With Class的原因，我们可以采用Class（类）的方法去优化这个问题。什么是Class（类）呢？其实这是一种面对对象的方法，大家千万不要被「面对对象」这个名词给吓到了，我们在Arduino里面对于Class的方法是偏模板化的，不需要很多高深的知识，我们直接从RGB灯这个例子让大家了解什么是类！
+编译、下载之后，我们可以看到RGB灯按照红色、绿色、蓝色依次点亮，确实能够实现我们需要的效果。不过我们其实也是发现说，我们在代码里面其实做了很多重复性的工作，假如我们有100个LED灯，难道我们还需要写100个`pinMode`去依次的设定吗？有没有什么更好的方法呢？当然有！这也就是为什么我们的课程叫做Arduino With Class的原因，我们可以采用`class`（类）的方法去优化这个问题。什么是`Class`（类）呢？其实这是一种面对对象的方法，大家千万不要被「面对对象」这个名词给吓到了，我们在Arduino里面对于`Class`的方法是偏模板化的，不需要很多高深的知识，我们直接从RGB灯这个例子让大家了解什么是类！
 
 我们开始，在使用类前，我们需要先新建两个标签，一个是`xxx.cpp`，而另一个则是`xxx.h`，按照如下图的方法新建：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721144916.png)
 
-在wokwi中，同样也可以也是新建一个标签：
+假如是使用Wokwi仿真，在其中，同样也可以也是新建一个标签：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211071535190.png)
 
 输入我们需要的名称，因为这里是对于LED的控制，我们称之为led，后缀一定是要为`.cpp`：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145014.png)
 
-然后我们在新建一个和上述cpp文件同样名字的文件，其后缀为`.h`：
+然后我们在新建一个和**上述cpp文件同样名字**的文件，其后缀为`.h`：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/20220721145457.png)
 
-再Wokwi中的建立效果如下：
+同样的，在Wokwi中的建立效果如下：
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211072334413.png)
 
 接着，我们在`led.cpp`中写如下的内容：
@@ -186,15 +192,27 @@ void loop() {
 ```arduino title="led.cpp"
 #include "led.h"
 
+// LED的默认构造函数
+LED::LED(){}
+
+// LED带有初始化IO的构造函数
 LED::LED(int led_pin_input) {
   led_pin = led_pin_input;
   pinMode(led_pin, OUTPUT);
 }
 
+// 设置LED的IO的构造函数
+LED::SetPin(int led_pin_input){
+  led_pin = led_pin_input;
+  pinMode(led, OUTPUT);
+}
+
+// 点亮LED
 void LED::On() {
   digitalWrite(led_pin, HIGH);
 }
 
+// 关闭LED
 void LED::Off() {
   digitalWrite(led_pin, LOW);
 }
@@ -223,7 +241,7 @@ class LED {
 
 在`rgb_led_with_class.ino`中写代码如下：
 ```arduino title="rgb_led_with_class.ino"
-#include "led.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
+#include "led.h" // 导入我们刚才写好的头文件，头文件是不需要分号;的
 
 LED red_led(12); // GPIO 12控制红色LED
 LED green_led(11); // GPIO 11控制绿色LED
@@ -236,19 +254,23 @@ void setup() {
 void loop() {
   blue_led.Off(); // 关闭蓝色LED灯
   red_led.On(); // 点亮红色LED
-  delay(1000);
-  red_led.Off();
-  green_led.On();
-  delay(1000);
-  green_led.Off();
-  blue_led.On();
-  delay(1000);
+  delay(1000); // 等待1000秒
+  red_led.Off(); // 关闭红色LED灯
+  green_led.On(); // 点亮绿色LED
+  delay(1000); // 等待1000秒
+  green_led.Off(); // 关闭绿色LED灯
+  blue_led.On(); // 打开蓝色LED灯
+  delay(1000); // 等待1000秒
 } 
 ```
 
 在Wokwi中也是同上述一样的操作，然后我们点击运行，可以看到效果是红色-绿色-蓝色交替切换：
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211072354500.png)
+
+:::danger
+到时补充图片
+:::
 
 ## 数码管模块的使用
 
@@ -262,19 +284,24 @@ void loop() {
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211080039564.png)
 
-在电路构建之后，我们开始写程序，思路开始和之前的RGB灯一样的，我们还是先尝试把所有灯点亮，我们将之前的ino代码修改如下，其他的cpp和h保持不变：
+实际搭建的电路也是按照上图连接如下：
+:::danger
+到时补充图片
+:::
+
+在电路构建之后，我们开始写程序，思路开始和之前的RGB灯一样的，我们还是先尝试把所有灯点亮，我们将之前的`ino`代码修改如下，其他的`cpp`和`h`保持不变：
 在`digital_tube.ino`中写代码如下：
 
 ```arduino title="digital_tube.ino"
 #include "led.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
 
-LED a(3); // GPIO 12控制红色LED
-LED b(4); // GPIO 11控制绿色LED
-LED c(5); // GPIO 10控制蓝色LED
-LED d(6); // GPIO 12控制红色LED
-LED e(7); // GPIO 11控制绿色LED
-LED f(8); // GPIO 10控制蓝色LED
-LED g(9); // GPIO 12控制红色LED
+LED a(3); // 初始化数码管控制a的io
+LED b(4); // 初始化数码管控制b的io
+LED c(5); // 初始化数码管控制c的io
+LED d(6); // 初始化数码管控制d的io
+LED e(7); // 初始化数码管控制e的io
+LED f(8); // 初始化数码管控制f的io
+LED g(9); // 初始化数码管控制g的io
 
 void setup() {
   // 空
@@ -299,13 +326,13 @@ void loop() {
   delay(1000);
 } 
 ```
-在运行代码之后，我们可以看到数码管开始闪烁，不过我们可以发现一个问题，在On的时候，灯是灭的，在Off的时候，灯是亮的，这是因为和之前的RGB模块相比，RGB模块是共阴的，而我们此时使用的数码管则是共阳的，这个时候，我们就可以直接修改class中的代码，修正这个bug，只要把On和Off的函数对换一下就可以啦！
+在运行代码之后，我们可以看到数码管开始闪烁，不过我们可以发现一个问题，在`On`的时候，灯是灭的，在`Off`的时候，灯是亮的，这是因为和之前的RGB模块相比，RGB模块是共阴的，而我们此时使用的数码管则是共阳的，这个时候，我们就可以直接修改`class`中的代码，修正这个bug，只要把`On`和`Off`的函数对换一下就可以啦！
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211081122905.png)
 
-在这个时候，或许我们已经可以感受到使用class的便利之处，一切皆是接口与模板，修改模板就能修改一切~！
+在这个时候，或许我们已经可以感受到使用`class`的便利之处，一切皆是接口与模板，修改模板就能修改一切~！
 
-这个时候，我们就可以开始来控制数码管来真正显示数字了，各个数字其实就是控制刚刚提到的“a、b、c、d、e、f、g、dp”点亮顺序即可，我们还是和刚才一样，新建digitaltube.cpp和digitaltube.h文件，我们代码最终修改如下（全部代码可从这里下载）：
+这个时候，我们就可以开始来控制数码管来真正显示数字了，各个数字其实就是控制刚刚提到的“a、b、c、d、e、f、g、dp”点亮顺序即可，我们还是和刚才一样，新建`digitaltube.cpp`和`digitaltube.h`文件，我们代码最终修改如下（全部代码可从这里下载）：
 
 ```arduino title="digital_tube.ino"
 #include "digitaltube.h" // 导入我们刚才写好的头文件，主要头文件是不需要分号;的
@@ -585,6 +612,10 @@ class DIGITALTUBE{
 
 在实际效果也是运行如下，这里我们选用的[一位数码管模块](https://item.taobao.com/item.htm?id=682811854092)，它是自带限流电阻的，记得我们还是要专注在程序上，而不是去做焊接等琐碎的工作~
 
+:::danger
+后面加入实际连接的图片
+:::
+
 ## 按键的使用
 好的嘞，我们已经学习了如何控制IO的输出，有了输出，当然就还有输入，我们来学习一下如何使用按键，并制作一个只有一位的计数器，Let's start!
 
@@ -602,7 +633,12 @@ class DIGITALTUBE{
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091416867.png)
 
-我们先来写个简单的小程序测试一按钮的输入，我们可以看到现在按钮再被按下之后呢，Arduino UNO上的3号IO就会被连接到GND（也就是负极上面），被按下之后，此时就是一个低电平的状态，代码实现检测如下，串口会直接打印检测为高低电平：
+而在实物上连接如下：
+:::danger
+后面加入图片
+:::
+
+我们先来写个简单的小程序测试一按钮的输入，代码如下：
 
 ```arduino title="key_dete.ino"
 const int key_input = 3;
@@ -616,6 +652,8 @@ void loop(){
 }
 ```
 
+我们可以看到现在按钮再被按下之后，Arduino UNO上的3号IO就会被连接到GND（也就是负极上面），被按下之后，此时就是一个低电平的状态，代码实现检测如下，串口会直接打印检测为高低电平：
+
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091427406.png)
 
 我们可以观察到，在被按下按键时，输出的结果为0，但是在松开按钮之后呢，其结果有时为0，有时为1，是一个飘忽不定的状态，这是为什么呢？我们从电路图上可以大致分析一下，在没有按下的时候，3号IO就是属于悬空状态，在按下之后，3号IO就被连接到GND上。
@@ -626,7 +664,7 @@ void loop(){
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/what_is_the_upper_re.png)
 
-可以从图中看到，在没有按下的时候，电压则是从5V通过电阻（一般我们会给10K）流向3号IO上，此时在没有按下的时候，3号IO就是处在高电平状态；在按下之后，有两股电压分别从GND（0V）和5V流向中间，不过5V是需要经过电阻，阻力比较大，所以GND占用优势，此时3号IO是0V状态，为低电平状态：
+可以从图中看到，在没有按下的时候，电压则是从5V通过电阻（一般我们会给10K）流向3号IO上，此时在没有按下的时候，3号IO就是处在高电平状态；在按下之后，有两股电压分别从GND（0V）和5V流向中间，不过5V是需要经过电阻，阻力比较大，所以GND占用优势，此时3号IO是GN（0V）状态，为低电平状态：
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/5V_GND_PK.png)
 
@@ -648,29 +686,30 @@ void loop(){
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/press_and_unpress.png)
 
-好的，那此时我们已经知道如何使用按键了，我们还是和之前的LED控制一样，将按键封装成为一个类class，我们还是和之前LED一样，新建一个key.cpp和key.h两个文件，如下图所示：
+好的，那此时我们已经知道如何使用按键了，我们还是和之前的LED控制一样，将按键封装成为一个类`class`，我们还是和之前LED一样，新建一个`key.cpp`和`key.h`两个文件，如下图所示：
 
 ![](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/202211091614865.png)
 
-我们在key.cpp中写代码如下：
+我们在`key.cpp`中写代码如下：
 
 ```arduino title="key.cpp"
 #include "key.h"
 
-KEY:: KEY(){
-  // 空，默认构造函数
-}
+KEY:: KEY(){}
 
+// 构造函数，并初始化按键的输入IO
 KEY:: KEY(int key_pin_input){
   key_pin = key_pin_input;
   pinMode(key_pin, INPUT_PULLUP);
 }
 
+// 设置并初始化按键的输入IO
 void KEY::SetPin(int key_pin_input) {
   key_pin = key_pin_input;
   pinMode(key_pin, INPUT_PULLUP);
 }
 
+// 获取按键按下的状态，是高电平还是低电平
 boolean KEY:: GetState(){
   return digitalRead(key_pin);
 }
@@ -690,9 +729,9 @@ class KEY {
 
   public:
     KEY(); // 使用默认的构造函数
-    KEY(int key_pin_input);
-    void SetPin(int key_pin_input); // 设置LED的输出IO
-    boolean GetState();
+    KEY(int key_pin_input); // 设置并初始化输入IO的构造函数
+    void SetPin(int key_pin_input); // 设置按键的输入IO
+    boolean GetState(); // 获取按键输入状态
 };
 
 #endif
@@ -701,14 +740,14 @@ class KEY {
 ```arduino title="key_dete_with_pullup.ino"
 #include "key.h"
 
-KEY key_1(3);
+KEY key_1(3); # 设置输入的IO是3号引脚
 
 void setup(){
-  Serial.begin(9600);
+  Serial.begin(9600); # 设置波特率为9600
 }
 
 void loop(){
-  Serial.println(key_1.GetState());
+  Serial.println(key_1.GetState()); // 获取并打印按键的状态
 }
 ```
 我们可以看到和之前有着一样的效果，但是现在在ino中更加的简洁。
