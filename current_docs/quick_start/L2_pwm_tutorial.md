@@ -1,5 +1,5 @@
 ---
-id: L1_pwm_tutorial
+id: L2_pwm_tutorial
 sidebar_position: 7
 ---
 
