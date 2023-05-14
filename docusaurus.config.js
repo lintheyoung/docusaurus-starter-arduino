@@ -19,10 +19,10 @@ module.exports = {
     defaultLocale: "zh-CN",
     locales: ["en", "zh-CN"],
     localeConfigs: {
-      en: {
-        label: "English",
-        direction: "ltr",
-      },
+      // en: {
+      //   label: "English",
+      //   direction: "ltr",
+      // },
       "zh-CN": {
         label: "中文",
         direction: "ltr",
