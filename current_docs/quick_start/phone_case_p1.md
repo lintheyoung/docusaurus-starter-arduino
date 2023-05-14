@@ -244,8 +244,6 @@ delay的单位是什么
 
 例如，以下代码声明了一个名为`myVariable`的变量，类型为`int`，并赋值为10：
 
-arduino
-
 ```arduino
 int myVariable = 10;
 ```
@@ -262,7 +260,6 @@ int myVariable = 10;
 
 以下是一个声明一个名为`myLongVariable`的`long`类型变量的示例：
 
-arduino
 
 ```arduino
 long myLongVariable = 1234567890;
@@ -305,7 +302,6 @@ float类型和double类型代表什么，它们两个有什么区别呢？
 
 使用`float`类型的示例：
 
-arduino
 
 ```arduino
 float temperature = 25.5;
@@ -315,7 +311,6 @@ float voltage = 4.75;
 
 使用`double`类型的示例：
 
-arduino
 
 ```arduino
 double pi = 3.14159265358979;
@@ -378,7 +373,6 @@ double acceleration = 9.81;
 
 以下是一个示例，演示了如何使用`i++`递增变量`i`的值：
 
-arduino
 
 ```arduino
 int i = 5;
@@ -537,7 +531,6 @@ random函数要怎么使用呢？
 
 1.  `random(max)`: 这种用法将生成一个从0到`max-1`之间的随机整数。例如，如果你调用`random(10)`，它将生成一个0到9之间的随机整数。
 
-    arduino
 
     ```arduino
     int randomNumber = random(10);  // 生成0到9之间的随机整数
@@ -545,7 +538,6 @@ random函数要怎么使用呢？
 
 2.  `random(min, max)`: 这种用法将生成一个从`min`到`max-1`之间的随机整数。例如，如果你调用`random(5, 10)`，它将生成一个5到9之间的随机整数。
 
-    arduino
 
     ```arduino
     int randomNumber = random(5, 10);  // 生成5到9之间的随机整数
@@ -556,7 +548,6 @@ random函数要怎么使用呢？
 
 以下是一个使用`random()`函数生成随机数的示例：
 
-arduino
 
 ```arduino
 void setup() {
