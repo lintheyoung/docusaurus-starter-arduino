@@ -1,4 +1,4 @@
----
+<!-- ---
 id: rt_kernel
 sidebar_position: 3
 ---
@@ -176,4 +176,4 @@ At this point, you can see that the kernel version is marked with ` PREEMPT RT` 
    A2.
    ```bash
    sudo apt-get install flex
-   ````
+   ```` -->

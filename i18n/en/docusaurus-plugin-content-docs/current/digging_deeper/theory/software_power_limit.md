@@ -1,4 +1,4 @@
----
+<!-- ---
 sidebar_position: 1
 ---
 
@@ -44,4 +44,4 @@ $$
 $$
 
 The following figure shows the curves of power (top), speed command (middle) and actual speed (bottom) for the infantry robot entering the high-speed small gyro at rest and then entering the slow small gyro and finally panning in the high-speed small gyro state. It can be seen that in the high-speed small gyro state, the power is limited below near the red line and the actual speed is smaller than the speed command, and after entering the slow small gyro, the power decreases, at which time the actual speed is equal to the speed command, and finally when panning in the high-speed small gyro state, the power is still limited below near the cyan line (maximum power).
-![Software chassis power limit](/img/digging_deeper/software_power_limit.png)
+![Software chassis power limit](/img/digging_deeper/software_power_limit.png) -->

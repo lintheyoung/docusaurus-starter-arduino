@@ -26,7 +26,7 @@ export default function GetStarted() {
           {"Arduino 科创教程 {highlighted}"}
         </Translate>
       ),
-      link: useBaseUrl("quick_start/L0_install_tutorial"),
+      link: useBaseUrl("quick_start/phone_case_p1"),
     },
     {
       bg: useBaseUrl("img/ic-plugin-bg.svg"),

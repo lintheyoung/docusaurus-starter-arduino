@@ -1,4 +1,4 @@
----
+<!-- ---
 id: rt_test
 sidebar_position: 4
 ---
@@ -37,4 +37,4 @@ Analysis.
 
 1. more samples on the left side usually means lower latency
 2. more clustered samples means less chatter
-3. maximum latency should not deviate too far from the average (usually below 100us)
+3. maximum latency should not deviate too far from the average (usually below 100us) -->

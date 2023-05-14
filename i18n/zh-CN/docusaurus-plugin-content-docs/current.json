@@ -3,10 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.overview": {
-    "message": "概述",
-    "description": "The label for category overview in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.jump-start": {
     "message": "Arduino 科创课程",
     "description": "The label for category jump-start in sidebar tutorialSidebar"

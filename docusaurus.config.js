@@ -60,12 +60,6 @@ module.exports = {
           label: "Get Started",
         },
         {
-          type: "doc",
-          docId: "overview/intro",
-          position: "right",
-          label: "Docs",
-        },
-        {
           type: "localeDropdown",
           position: "right",
         },
