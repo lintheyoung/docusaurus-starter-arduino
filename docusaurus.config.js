@@ -17,7 +17,7 @@ module.exports = {
   trailingSlash: false,
   i18n: {
     defaultLocale: "zh-CN",
-    locales: ["en", "zh-CN"],
+    locales: ["zh-CN"],
     localeConfigs: {
       // en: {
       //   label: "English",
