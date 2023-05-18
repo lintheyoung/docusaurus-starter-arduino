@@ -12,11 +12,11 @@
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.sam_tag": {
-    "message": "SAM自动化打标签系统(开源项目)",
+    "message": "VideoToTag(开源项目)",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.pcb": {
-    "message": "HephaUni&HermLin(开源项目)",
+    "message": "HephaUni&HermLink(开源项目)",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   }
 }
