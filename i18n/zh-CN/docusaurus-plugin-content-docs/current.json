@@ -10,5 +10,13 @@
   "sidebar.tutorialSidebar.category.tiangong": {
     "message": "2023 天宫建设",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.sam_tag": {
+    "message": "SAM自动化打标签系统(开源项目)",
+    "description": "The label for category jump-start in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.pcb": {
+    "message": "HephaUni&HermLin(开源项目)",
+    "description": "The label for category jump-start in sidebar tutorialSidebar"
   }
 }
