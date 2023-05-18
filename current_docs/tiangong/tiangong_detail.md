@@ -29,6 +29,9 @@ sidebar_position: 3
 - [天宫建设-**V17_1代码**重要更新](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E4%BB%A3%E7%A0%81%E6%96%87%E4%BB%B6/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BEV17_1-%E5%8A%A0%E5%85%A5%E6%96%B0%E8%B5%B7%E7%82%B9-%E5%85%BC%E5%AE%B9%E9%9A%8F%E6%9C%BA%E8%B7%AF%E7%BA%BF-%E9%9A%8F%E6%9C%BA%E7%89%A9%E5%9D%97.mix)
 加入从修正仓启动；
 
+
 ## 使用手册
 - [天宫建设-使用手册V2.0](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/2023%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97-V2.0.pdf)
 
+## 软件下载
+- [米思齐RC3下载](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%B5%B7%E6%9C%88%E7%9A%84%E8%B5%84%E6%96%99/mixly2.0-win32-x64-rc3%282%29.zip)
