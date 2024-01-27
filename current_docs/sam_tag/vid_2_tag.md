@@ -3,7 +3,7 @@ id: vid_2_tag
 sidebar_position: 4
 ---
 
-# Video to Tag
+# 自动化打标工具
 ## 项目思路
 5min从视频到边缘设备检测目标物体落地：
 

@@ -18,5 +18,9 @@
   "sidebar.tutorialSidebar.category.pcb": {
     "message": "底盘控制",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.imu": {
+    "message": "陀螺仪",
+    "description": "The label for category jump-start in sidebar tutorialSidebar"
   }
 }
