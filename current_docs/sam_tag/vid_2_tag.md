@@ -5,11 +5,10 @@ sidebar_position: 4
 
 # 自动化打标工具
 ## 项目思路
-5min从视频到边缘设备检测目标物体落地：
+5min从视频到边缘设备检测目标物体落地，项目通过SAM大模型可实现提取目标检测物体，并可自动追踪并获取VOC等数据格式，极大的减低了人工打标签的成本，实现嵌入式视觉识别的快速低成本落地，为机器人感知环境提供一套完整的解决方案。
 
 ![示意流程图](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/DedeMakerFiles/video_2_tag_4_11zon.webp)
 
-## RoadMap
-- ~~完成功能测试；~~
-- 打包Docker至Github；
-- 提供在线自动标定服务；
+## 自动化打标工具使用方法
+
+![墨迹演示](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/dedemaker_pic/%E5%A2%A8%E5%8D%B0%E6%BC%94%E7%A4%BA.png)

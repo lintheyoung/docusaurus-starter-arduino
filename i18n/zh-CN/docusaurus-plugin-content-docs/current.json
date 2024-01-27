@@ -12,11 +12,11 @@
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.sam_tag": {
-    "message": "K210",
+    "message": "K210视觉识别",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.pcb": {
-    "message": "底盘控制",
+    "message": "底盘控制器",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.imu": {
