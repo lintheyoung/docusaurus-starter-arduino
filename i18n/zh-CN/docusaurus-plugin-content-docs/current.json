@@ -8,15 +8,15 @@
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.tiangong": {
-    "message": "2023 天宫建设",
+    "message": "机器人项目",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.sam_tag": {
-    "message": "VideoToTag(开源项目)",
+    "message": "K210",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.pcb": {
-    "message": "HephaUni&HermLink(开源项目)",
+    "message": "底盘控制",
     "description": "The label for category jump-start in sidebar tutorialSidebar"
   }
 }
