@@ -27,7 +27,7 @@ sidebar_position: 5
 
 需要连接的接口为其中的电源XT30接口、I2C控制接口、和IMU陀螺仪接口（可选）：
 
-![板子连接方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/dedemaker_pic/%E6%9D%BF%E5%AD%90%E6%89%8B%E5%86%8C_1.webp）
+![板子连接方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/dedemaker_pic/%E6%9D%BF%E5%AD%90%E6%89%8B%E5%86%8C_1.webp)
 
 导入Arduino库：点击这里下载[DeDeEncCar_V1_0.zip](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/Dedemaker_%E7%A7%91%E5%88%9B%E9%A1%B9%E7%9B%AE/MoFangPro/%E9%A1%B9%E7%9B%AE%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E5%BA%93/%E9%A1%B9%E7%9B%AE%E5%BA%93/DeDeEncCar_V1_0.zip)
 
