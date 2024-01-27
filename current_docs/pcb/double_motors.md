@@ -1,6 +1,6 @@
 ---
-id: sam_tag
-sidebar_position: 5
+id: double
+sidebar_position: 6
 ---
 
 # 双路底盘控制板
