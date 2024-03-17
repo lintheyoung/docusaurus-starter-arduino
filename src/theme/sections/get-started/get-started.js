@@ -11,7 +11,7 @@ export default function GetStarted() {
 
   const itemsData = [
     {
-      bg: useBaseUrl("img/ic-theme-bg.svg"),
+      bg: useBaseUrl("img/ic-bullet-2.svg"),
       icon: useBaseUrl("img/homepage/DeDeIMU_wo_bg_new.png"),
       type: "theme",
       label: (
