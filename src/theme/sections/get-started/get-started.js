@@ -12,14 +12,14 @@ export default function GetStarted() {
   const itemsData = [
     {
       bg: useBaseUrl("img/ic-theme-bg.svg"),
-      icon: useBaseUrl("img/homepage/arduino_nano.png"),
+      icon: useBaseUrl("img/homepage/DeDeIMU_wo_bg_new.png"),
       type: "theme",
       label: (
         <Translate
           id="homepage.getStarted.rmControls101"
           values={{
             highlighted: (
-              <span className="${component}__label-highlight">Arduino</span>
+              <span className={"${component}__label-highlight"}>低漂抗扰陀螺仪</span>
             ),
           }}
         >
@@ -37,7 +37,7 @@ export default function GetStarted() {
           id="homepage.getStarted.gazeboChassis"
           values={{
             highlighted: (
-              <span className={`${component}__label-highlight`}>ESP32</span>
+              <span className={`${component}__label-highlight`}>轮式机器人控制器</span>
             ),
           }}
         >
