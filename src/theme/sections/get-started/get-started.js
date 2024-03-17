@@ -11,9 +11,9 @@ export default function GetStarted() {
 
   const itemsData = [
     {
-      bg: useBaseUrl("img/ic-bullet-2.svg"),
+      bg: useBaseUrl("img/ic-theme-bg.svg"),
       icon: useBaseUrl("img/homepage/DeDeIMU_wo_bg_new.png"),
-      type: "theme",
+      type: "plugin",
       label: (
         <Translate
           id="homepage.getStarted.rmControls101"
