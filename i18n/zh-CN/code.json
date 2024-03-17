@@ -198,9 +198,9 @@
     "description": "The Heading subtitle"
   },
   "homepage.intro1": {
-    "message": "系列课程"
+    "message": ""
   },
   "homepage.intro": {
-    "message": "Arduino 科创课程与ESP32(Coming Soon)系列课程。"
+    "message": "高性能机器人传感器研发与设计"
   }
 }
