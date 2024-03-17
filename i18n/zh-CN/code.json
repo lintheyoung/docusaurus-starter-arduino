@@ -190,11 +190,11 @@
     "message": " {highlighted}(Coming Soon)系列教程"
   },
   "homepage.getStarted.headingTitle": {
-    "message": "选择一种想要学习的嵌入式平台",
+    "message": "深入了解相关产品",
     "description": "The Heading title"
   },
   "homepage.getStarted.headingSubtitle": {
-    "message": "目前开始更新Arduino的相关课程，在后续会开始ESP32的课程。",
+    "message": "目前已上线低漂抗扰陀螺仪、4W轮式机器人控制、K210视觉识别传感器",
     "description": "The Heading subtitle"
   },
   "homepage.intro1": {

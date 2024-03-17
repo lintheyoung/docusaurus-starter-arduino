@@ -26,7 +26,7 @@ export default function Intro() {
           />
           <img
             className={`${component}__image-img`}
-            src={useBaseUrl("img/homepage/home_bg.png")}
+            src={useBaseUrl("img/homepage/home_bg_4WController.png")}
           />
         </div>
         <div className={`${component}__content`}>
