@@ -9,8 +9,8 @@ sidebar_position: 3
 # 图文教程（0319更新）
 ## 地图构建与机器人启动
 ![地图构建节点](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
-![启动的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%8710.JPG)
-- [启动机器人视频教程]()
+![启动的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%872.JPG)
+- [启动机器人视频教程](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 
 
 ## 软件安装与函数解析
