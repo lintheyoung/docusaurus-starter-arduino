@@ -47,7 +47,7 @@ export default function GetStarted() {
       link: useBaseUrl("quick_start/gazebo_chassis"),
     },
     {
-      bg: useBaseUrl("img/ic-theme-bg.svg"),
+      bg: useBaseUrl("img/ic-bullet-4.svg"),
       icon: useBaseUrl("img/homepage/DeDeIMU-Small.png"),
       type: "plugin",
       label: (
