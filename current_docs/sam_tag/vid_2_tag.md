@@ -1,5 +1,5 @@
 ---
-id: vid_2_tag
+id: VideoToTag
 sidebar_position: 4
 ---
 :::danger
