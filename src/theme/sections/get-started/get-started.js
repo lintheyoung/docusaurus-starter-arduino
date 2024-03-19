@@ -46,24 +46,6 @@ export default function GetStarted() {
       ),
       link: useBaseUrl("quick_start/gazebo_chassis"),
     },
-    {
-      bg: useBaseUrl("img/ic-bullet-4.svg"),
-      icon: useBaseUrl("img/homepage/DeDeIMU-Small.png"),
-      type: "plugin",
-      label: (
-        <Translate
-          id="homepage.getStarted.rmControls101"
-          values={{
-            highlighted: (
-              <span className={"${component}__label-highlight"}>K210视觉识别传感器</span>
-            ),
-          }}
-        >
-          {"Arduino 科创教程 {highlighted}"}
-        </Translate>
-      ),
-      link: useBaseUrl("quick_start/phone_case_p1"),
-    },
   ];
 
   const items = itemsData.map((item, index) => {

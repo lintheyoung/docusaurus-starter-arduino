@@ -194,7 +194,7 @@
     "description": "The Heading title"
   },
   "homepage.getStarted.headingSubtitle": {
-    "message": "目前已上线低漂抗扰陀螺仪、4W轮式机器人控制器、K210视觉识别传感器",
+    "message": "目前已上线低漂抗扰陀螺仪(DeDeIMU)、4W轮式机器人控制器(DeDe4W)、K210视觉识别传感器(Comming Soon!)",
     "description": "The Heading subtitle"
   },
   "homepage.intro1": {
