@@ -12,7 +12,7 @@ export default function GetStarted() {
   const itemsData = [
     {
       bg: useBaseUrl("img/ic-theme-bg.svg"),
-      icon: useBaseUrl("img/homepage/DeDeIMU_white_wo_bg.png"),
+      icon: useBaseUrl("img/homepage/DeDeIMU-Small.png"),
       type: "plugin",
       label: (
         <Translate

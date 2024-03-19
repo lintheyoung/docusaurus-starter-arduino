@@ -184,10 +184,12 @@
     "description": "The title of the tag list page"
   },
   "homepage.getStarted.rmControls101": {
-    "message": " {highlighted} With Class系列课程"
+    // "message": " {highlighted} With Class系列课程"
+    "message": ""
   },
   "homepage.getStarted.gazeboChassis": {
-    "message": " {highlighted}(Coming Soon)系列教程"
+    // "message": " {highlighted}(Coming Soon)系列教程"
+    "message": ""
   },
   "homepage.getStarted.headingTitle": {
     "message": "深入了解相关产品",
