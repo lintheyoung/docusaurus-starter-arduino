@@ -26,7 +26,7 @@ export default function GetStarted() {
           {"Arduino 科创教程 {highlighted}"}
         </Translate>
       ),
-      link: useBaseUrl("quick_start/phone_case_p1"),
+      link: useBaseUrl("imu/IMU"),
     },
     {
       bg: useBaseUrl("img/ic-plugin-bg.svg"),
@@ -44,7 +44,7 @@ export default function GetStarted() {
           {"ESP32教程{highlighted}"}
         </Translate>
       ),
-      link: useBaseUrl("quick_start/gazebo_chassis"),
+      link: useBaseUrl("pcb/quar"),
     },
   ];
 

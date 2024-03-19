@@ -2,6 +2,9 @@
 id: vid_2_tag
 sidebar_position: 4
 ---
+:::danger
+本文还未完成。
+:::
 
 # 自动化打标工具
 ## 项目思路
