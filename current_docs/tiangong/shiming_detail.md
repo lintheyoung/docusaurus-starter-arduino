@@ -26,13 +26,14 @@ sidebar_position: 4
 - [0326程序-小车程序（击打攻击车）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
 - [0326程序-小车程序（推电池）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
 - [0326程序-摄像头识别程序（电脑端）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/1%E3%80%81%E8%A7%86%E8%A7%89%E8%AF%86%E5%88%AB%E8%BD%AF%E4%BB%B6-%E7%94%B5%E8%84%91%E7%AB%AF-0326.zip)
+
 电脑端软件的使用：
 
 1、发送器安装：
 
 ![发送器安装](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%876.JPG)
 
-2、选择地图的四个点：
+2、打开电脑端软件、选择地图的四个点：
 
 ![选择地图四个点](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%877.JPG)
 
@@ -49,9 +50,11 @@ sidebar_position: 4
 5、米思齐程序节点：
 
 5.1、击打小车程序节点：
+
 ![小车启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
 
 5.2、推块小车程序节点：
+
 ![小车启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%872.JPG)
 
 
@@ -70,15 +73,35 @@ sidebar_position: 4
 
 电脑端软件的使用：
 
+1、打开软件
+
 ![电脑端软件](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8718.JPG)
+
+2、导入图片
 
 ![电脑端软件](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8719.JPG)
 
+3、设定尺寸（240*300）、点击设定大小
+
 ![电脑端软件](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8720.JPG)
+
+4、点击地图中的位置
 
 ![电脑端软件](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8721.JPG)
 
+5、构建路径
+
 ![电脑端软件](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8722.JPG)
+
+6、程序节点（无需摄像头）
+
+6.2、攻击击打小车程序节点（无需摄像头）：
+
+![小车启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%873.JPG)
+
+5.2、推块小车程序节点（无需摄像头）：
+
+![小车启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%874.JPG)
 
 ### 主体函数解析
 ![函数解析1](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8711.JPG)
