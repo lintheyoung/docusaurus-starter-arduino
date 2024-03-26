@@ -25,7 +25,7 @@ sidebar_position: 4
 ### 使命召唤-米思齐程序-使用摄像头（0326更新）
 - [0326程序-小车程序（击打攻击车）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
 - [0326程序-小车程序（推电池）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
-- [0326程序-摄像头识别程序（电脑端）]()
+- [0326程序-摄像头识别程序（电脑端）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/1%E3%80%81%E8%A7%86%E8%A7%89%E8%AF%86%E5%88%AB%E8%BD%AF%E4%BB%B6-%E7%94%B5%E8%84%91%E7%AB%AF-0326.zip)
 电脑端软件的使用：
 
 1、发送器安装：
@@ -56,7 +56,7 @@ sidebar_position: 4
 
 - [0326程序-小车程序-无需摄像头（击打攻击车）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
 - [0326程序-小车程序-无需摄像头（推电池）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
-- [0326程序-地图构建程序（电脑端）]()
+- [0326程序-地图构建程序（电脑端）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/2%E3%80%81DeDeMaker%E8%B0%83%E8%BD%A6%E5%8A%A9%E6%89%8B-VerCalico-20240321.zip)
 
 电脑端软件的使用：
 
@@ -78,3 +78,6 @@ sidebar_position: 4
 ![函数解析5](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8715.jpg)
 ![函数解析5](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8716.jpg)
 ![函数解析5](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/%E5%B9%BB%E7%81%AF%E7%89%8717.jpg)
+
+#### 更新说明
+- 支持盲走并击打所有目标物体；
