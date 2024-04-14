@@ -11,6 +11,11 @@ sidebar_position: 5
 
 ![地图构建](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
 
+参考视频：
+
+<iframe src="//player.bilibili.com/player.html?aid=1603134576&bvid=BV1Gm421j7PJ&cid=1506263938&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
 ## 软件安装与函数解析
 ### 米思齐安装 
 - [米思齐RC3下载（0411）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/mixly2.0-win32-x64-0411.zip)
