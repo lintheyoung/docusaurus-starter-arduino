@@ -3,6 +3,16 @@ id: zhihui
 sidebar_position: 5
 ---
 
+<style>
+  .bilibili-video {
+    display: block;  /* 使用块级元素以便居中 */
+    margin: auto;    /* 自动边距实现水平居中 */
+    width: 80%;      /* 宽度设置为屏幕宽度的 80% */
+    height: 450px;   /* 可以调整高度，或者设为 auto 根据宽度自适应 */
+  }
+</style>
+
+
 # 2024 智慧城市资料汇总
 
 # 图文教程（0411更新）
@@ -13,7 +23,8 @@ sidebar_position: 5
 
 参考视频：
 
-<iframe src="//player.bilibili.com/player.html?aid=1603134576&bvid=BV1Gm421j7PJ&cid=1506263938&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe class="bilibili-video" src="//player.bilibili.com/player.html?aid=1603134576&bvid=BV1Gm421j7PJ&cid=1506263938&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 
 
 ## 软件安装与函数解析
