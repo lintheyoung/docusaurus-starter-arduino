@@ -3,7 +3,7 @@ id: zhihui
 sidebar_position: 5
 ---
 
-# 2024 智慧城市-资料汇总
+# 2024 智慧城市资料汇总
 
 # 图文教程（0411更新）
 ## 地图构建与机器人启动
@@ -13,7 +13,8 @@ sidebar_position: 5
 
 ## 软件安装与函数解析
 ### 米思齐安装 
-- [米思齐RC3下载（0326）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%E6%96%87%E4%BB%B6/mixly2.0-win32-x64-0326.zip)
+- [米思齐RC3下载（0411）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/mixly2.0-win32-x64-0411.zip)
+
 下载后解压双击打开**Mixly.exe**即可，请将文件放在C盘下，不要有中文路径。
 
 - ![ESP32C3选择](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/ESP32_choice.png)
