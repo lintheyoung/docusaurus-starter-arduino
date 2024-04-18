@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # 2024 智慧城市资料汇总
 
-# 图文教程（0411更新）
+# 图文教程（0417更新）
 ## 地图构建与机器人启动
 地图构建：
 
@@ -18,11 +18,11 @@ sidebar_position: 5
 
 ## 软件安装与函数解析
 ### 米思齐安装 
-- [米思齐RC3下载（0411）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/mixly2.0-win32-x64-0411.zip)
+- [米思齐RC3下载（0415）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/mixly2.0-win32-x64-0415.zip)
 
 下载后解压双击打开**Mixly.exe**即可，请将文件放在C盘下，不要有中文路径。
 
-- ![ESP32C3选择](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/ESP32_choice.png)
+- ![ESP32C3选择](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/WechatIMG73.jpg)
 
 - 选择ESP32C3后打开下面的程序。
 
@@ -31,6 +31,7 @@ sidebar_position: 5
 目前暂时不做识别，先做路线的直接行走：
 
 - [0411程序-小车程序-无摄像头检测](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/zhihuichengshi_0411.mix)
+- [0417程序-小车程序-无摄像头检测-提高路线的稳定性](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhihuichengshi_0417.mix)
 
 
 ### 主体函数解析
@@ -53,4 +54,5 @@ sidebar_position: 5
 ![函数解析17](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/%E5%B9%BB%E7%81%AF%E7%89%8718.JPG)
 
 #### 更新说明(0411)
-- 支持路线的行走和抓取；
+- 支持路线的行走和抓取（0411）；
+- 进一步提高路线行走的稳定性（0417）；
