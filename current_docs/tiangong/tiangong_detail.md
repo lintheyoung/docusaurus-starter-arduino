@@ -59,3 +59,9 @@ sidebar_position: 3
 ![函数解析8](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%8710.JPG)
 ![函数解析9](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/new_image_1.png)
 ![函数解析10](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/new_image_0.png)
+
+### 计划更新顺序
+- ~加入不含有陀螺仪的转弯模块；~
+- ~加入非轴心转弯的模块；~
+- 提升下寻迹的抓线性，优化下轮子速度PID+寻迹PID；
+- 大家有需要记得和我沟通下需求；
