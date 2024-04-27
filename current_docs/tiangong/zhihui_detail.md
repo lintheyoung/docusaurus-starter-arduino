@@ -36,6 +36,11 @@ sidebar_position: 5
 
 ### 智慧城市-K210摄像头程序
 
+#### 要注意板子的连接
+![连接1](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/f522f016be6d9e81a8a7d01e1e3c46b.png)
+![连接2](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/2399b41bc47f68f75b06e0e626f2f0d.png)
+
+
 #### 这两个软件是用于下载程序：
 
 - MaixpyIDE下载：[MaixpyIDE下载](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/MaixPyIDE.zip)
