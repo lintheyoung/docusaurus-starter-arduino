@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # 2024 智慧城市资料汇总
 
-# 图文教程（0417更新）
+# 图文教程（0427更新）
 ## 地图构建与机器人启动
 地图构建：
 
@@ -102,7 +102,7 @@ sidebar_position: 5
 ![函数解析18](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/3927a6b0a6c06100b10d73c4304cd94.png)
 ![函数解析19](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/ce860964ceff6386302577f11694dce.png)
 
-#### 更新说明(0411)
+#### 更新说明(0427)
 - 支持路线的行走和抓取（0411）；
 - 进一步提高路线行走的稳定性（0417）；
 - 加入摄像头检测（0427）；
