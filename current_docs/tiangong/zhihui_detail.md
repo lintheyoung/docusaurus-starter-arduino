@@ -35,13 +35,19 @@ sidebar_position: 5
 - [0427程序-小车程序-加入摄像头检测-加入侧移](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/zhihuichengshi_0427.mix)
 
 ### 智慧城市-K210摄像头程序
+
 #### 这两个软件是用于下载程序：
-MaixpyIDE下载：[MaixpyIDE下载](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/MaixPyIDE.zip)
-KFlashGUI下载：[KFlashGUI下载](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/kflash.zip)
+
+- MaixpyIDE下载：[MaixpyIDE下载](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/MaixPyIDE.zip)
+
+- KFlashGUI下载：[KFlashGUI下载](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/kflash.zip)
+
 #### 程序和模型下载（0427）：
-K210程序（使用MaixPyIDE打开）：[K210-0427程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/smart_city_k210_0427.py)
-红绿灯识别模型（使用KFlashGUI打开）：[HongLv-0427模型](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/hong_lv_yolo.kmodel)
-数字识别模型（使用KFlashGUI打开）：[ShuZi-0427模型](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/num_yolo.kmodel)
+- K210程序（使用MaixPyIDE打开）：[K210-0427程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/smart_city_k210_0427.py)
+
+- 红绿灯识别模型（使用KFlashGUI打开）：[HongLv-0427模型](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/hong_lv_yolo.kmodel)
+
+- 数字识别模型（使用KFlashGUI打开）：[ShuZi-0427模型](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/num_yolo.kmodel)
 
 #### K210程序下载方法
 打开K210程序：
@@ -58,15 +64,15 @@ K210程序（使用MaixPyIDE打开）：[K210-0427程序](https://dedemaker-1255
 
 #### 模型的下载方法
 打开KFlashGUI：
-![下载1](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/74240da7aef45fb2dd19924ac3e6f5c.png）
+![下载1](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/74240da7aef45fb2dd19924ac3e6f5c.png)
 下载红绿灯模型：
-![下载2](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/b83400f7c1284f48614793362883509.jpg）
-![下载3](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/966eb46bd36e5c89b9eefe3bddb4bb6.png）
-![下载4](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/00d53ad93c8b77959119f768e0ea2ad.png）
+![下载2](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/b83400f7c1284f48614793362883509.jpg)
+![下载3](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/966eb46bd36e5c89b9eefe3bddb4bb6.png)
+![下载4](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/00d53ad93c8b77959119f768e0ea2ad.png)
 下载识别数字模型：
-![下载5](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/c2bdb9887bea54318c503fcbf81fb76.png）
-![下载6](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/966eb46bd36e5c89b9eefe3bddb4bb6.png）
-![下载7](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/00d53ad93c8b77959119f768e0ea2ad.png）
+![下载5](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/c2bdb9887bea54318c503fcbf81fb76.png)
+![下载6](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/966eb46bd36e5c89b9eefe3bddb4bb6.png)
+![下载7](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/00d53ad93c8b77959119f768e0ea2ad.png)
 
 
 ### 主体函数解析
