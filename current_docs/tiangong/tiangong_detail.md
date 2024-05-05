@@ -13,7 +13,7 @@ sidebar_position: 3
 ## 地图构建与机器人启动
 ![地图构建节点](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
 ![启动的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%872.JPG)
-- [启动机器人视频教程](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+- [启动机器人视频教程（0424及其之前代码）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 
 
 ## 软件安装与函数解析
@@ -33,6 +33,8 @@ sidebar_position: 3
 - [0319程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
 - [0424程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0424.mix)
 - [0426程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0426.mix)
+- [0505程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0505.mix)
+
 
 - [用于装配车子测试舵机电机程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianSZhuangPei.mix)
 #### 更新说明
@@ -43,12 +45,14 @@ sidebar_position: 3
 - 0426程序-不依赖陀螺仪的转弯（在当前的角度下，转动多少角度）；
 - 0426程序-加入了三个按钮的输入模块；
 - 0426程序-修复舵机有老师反馈有时不动的问题；
+- 0505程序-增加可以选择程序的入口；
 - 用于装配车子测试舵机电机程序-按下第一次初始化舵机角度，再次按下前进一段距离后退一段距离；
 
 ### 天宫建设-操作视频（点击链接可播放）
 - [初始化底部灰度传感器](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%81%B0%E5%BA%A6.mp4)
 - [0424程序选择颜色与启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/0424%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 - [0426程序如何从非起点启动，从任意一个起点开始](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%96%AD%E7%82%B9%E5%BC%80%E5%A7%8B.mp4)
+- [0505启动选择的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE-%E6%96%B0%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 
 
 ### 主体函数解析
@@ -62,6 +66,8 @@ sidebar_position: 3
 ![函数解析8](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%8710.JPG)
 ![函数解析9](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/new_image_1.png)
 ![函数解析10](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/new_image_0.png)
+
+![函数解析11](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%80%89%E6%8B%A9%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F.png)
 
 ### 计划更新顺序
 - ~加入不含有陀螺仪的转弯模块；~
