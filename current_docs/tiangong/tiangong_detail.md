@@ -9,7 +9,7 @@ sidebar_position: 3
 # 图文装配教程（0428更新）
 - [图文装配教程下载（0428）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E8%A3%85%E9%85%8D%E6%8C%87%E5%8D%97-0428-%E5%8E%8B%E7%BC%A9.pdf)
 
-# 图文教程（0426更新）
+# 图文教程（0505更新）
 ## 地图构建与机器人启动
 ![地图构建节点](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
 ![启动的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%872.JPG)
@@ -29,7 +29,7 @@ sidebar_position: 3
 ### Arduino UNO R4在米思齐要选择正确
 ![米思齐要选择正确](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/ArduinoR4.png)
 
-### 天宫建设-米思齐程序（0426更新）
+### 天宫建设-米思齐程序（0505更新）
 - [0319程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/TianGongJianShe0319.mix)
 - [0424程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0424.mix)
 - [0426程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0426.mix)
