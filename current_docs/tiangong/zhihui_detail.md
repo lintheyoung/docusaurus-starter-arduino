@@ -42,7 +42,7 @@ sidebar_position: 5
 ![0505程序-小车程序-加入十种选项选择-对应程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%80%89%E6%8B%A9%E9%A2%9C%E8%89%B2%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F.png)
 
 如果发现在抓取小球时候，车子很歪，理论上车子是应该非常直的，要调整这个参数
-![第二次启动小车角度校正]](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%92%E5%BA%A6.png)
+![第二次启动小车角度校正](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%92%E5%BA%A6.png)
 ### 智慧城市-K210摄像头程序
 
 #### 要注意板子的连接
