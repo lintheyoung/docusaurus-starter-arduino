@@ -53,6 +53,7 @@ sidebar_position: 3
 - [0424程序选择颜色与启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/0424%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 - [0426程序如何从非起点启动，从任意一个起点开始](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%96%AD%E7%82%B9%E5%BC%80%E5%A7%8B.mp4)
 - [0505启动选择的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE-%E6%96%B0%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+- [调整循迹参数的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%B0%83%E6%95%B4%E5%AF%BB%E8%BF%B9%E5%8F%82%E6%95%B0%E7%9A%84%E6%96%B9%E6%B3%95.mp4)
 
 
 ### 主体函数解析
