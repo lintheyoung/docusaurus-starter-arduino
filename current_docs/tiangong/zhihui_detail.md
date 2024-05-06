@@ -20,6 +20,8 @@ sidebar_position: 5
 ### 米思齐安装 
 - [米思齐RC3下载（0415）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/mixly2.0-win32-x64-0415.zip)
 
+- [米思齐RC3下载（0505(推荐使用)）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/mixly2.0-win32-x64-0505.zip)
+
 下载后解压双击打开**Mixly.exe**即可，请将文件放在C盘下，不要有中文路径。
 
 - ![ESP32C3选择](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/WechatIMG73.jpg)
@@ -33,11 +35,14 @@ sidebar_position: 5
 - [0411程序-小车程序-无摄像头检测](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhcs/zhihuichengshi_0411.mix)
 - [0417程序-小车程序-无摄像头检测-提高路线的稳定性](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhihuichengshi_0417.mix)
 - [0427程序-小车程序-加入摄像头检测-加入侧移](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/zhihuichengshi_0427.mix)
+- [0505程序-小车程序-加入十种选项选择](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhihuichengshi_0505_you_can_choice_now.mix)
+- [0505程序-小车程序-加入十种选项选择，操作视频](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/3d056859b1a5a1557d5dbdb03f0d753d.mp4)
+![0505程序-小车程序-加入十种选项选择-示意图](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%80%89%E6%8B%A9%E4%B8%8D%E6%8A%93%E5%8F%96%E7%9A%84%E7%89%A9%E5%9D%97.png)
 
 ### 智慧城市-K210摄像头程序
 
 #### 要注意板子的连接
-![连接1](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/f522f016be6d9e81a8a7d01e1e3c46b.png)
+![连接1](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E8%A3%85%E9%85%8D%E5%9B%BE.png)
 ![连接2](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/2399b41bc47f68f75b06e0e626f2f0d.png)
 
 
