@@ -36,10 +36,18 @@ sidebar_position: 5
 - [0417程序-小车程序-无摄像头检测-提高路线的稳定性](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhihuichengshi_0417.mix)
 - [0427程序-小车程序-加入摄像头检测-加入侧移](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/zhihuichengshi_0427.mix)
 - [0505程序-小车程序-加入十种选项选择](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhihuichengshi_0505_you_can_choice_now.mix)
+- [0507程序-小车程序-加入十种选项选择-对应程序-修复灯的问题](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/zhihuichengshi_0507_you_can_choice_now.mix)
+
 - [0505程序-小车程序-加入十种选项选择，操作视频](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/3d056859b1a5a1557d5dbdb03f0d753d.mp4)
+- [0507程序-小车程序-加入十种选项选择，在场地上的操作视频](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%96%B0%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+
 ![0505程序-小车程序-加入十种选项选择-示意图](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%80%89%E6%8B%A9%E4%B8%8D%E6%8A%93%E5%8F%96%E7%9A%84%E7%89%A9%E5%9D%97.png)
 对应的程序
 ![0505程序-小车程序-加入十种选项选择-对应程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%80%89%E6%8B%A9%E9%A2%9C%E8%89%B2%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F.png)
+
+- [小车初始化灰度的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%81%B0%E5%BA%A6%E7%9A%84%E6%96%B9%E6%B3%95.mp4)
+
+
 
 如果发现在抓取小球时候，车子很歪，理论上车子是应该非常直的，要调整这个参数
 ![第二次启动小车角度校正](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%BE%93%E5%85%A5%E7%9A%84%E8%A7%92%E5%BA%A6.png)
