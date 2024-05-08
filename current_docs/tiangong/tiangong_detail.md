@@ -6,10 +6,12 @@ sidebar_position: 3
 # 2024 天宫建设资料汇总
 ![天宫建设2024](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE2024%E4%B8%BB%E5%9B%BE.png)
 
-# 图文装配教程（0428更新）
+# 图文装配教程（0507更新）
 - [图文装配教程下载（0428）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E8%A3%85%E9%85%8D%E6%8C%87%E5%8D%97-0428-%E5%8E%8B%E7%BC%A9.pdf)
 
-# 图文教程（0505更新）
+- [图文装配教程下载（0507）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E8%A3%85%E9%85%8D%E6%8C%87%E5%8D%97-0507.pdf)
+
+# 图文教程（0508更新）
 ## 地图构建与机器人启动
 ![地图构建节点](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
 ![启动的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%872.JPG)
@@ -34,6 +36,9 @@ sidebar_position: 3
 - [0424程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0424.mix)
 - [0426程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0426.mix)
 - [0505程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0505.mix)
+- [0508程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0508.mix)
+
+
 
 
 - [用于装配车子测试舵机电机程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianSZhuangPei.mix)
@@ -46,6 +51,7 @@ sidebar_position: 3
 - 0426程序-加入了三个按钮的输入模块；
 - 0426程序-修复舵机有老师反馈有时不动的问题；
 - 0505程序-增加可以选择程序的入口；
+- 0508程序-增加可以不依靠陀螺仪的走直线；
 - 用于装配车子测试舵机电机程序-按下第一次初始化舵机角度，再次按下前进一段距离后退一段距离；
 
 ### 天宫建设-操作视频（点击链接可播放）
@@ -53,7 +59,7 @@ sidebar_position: 3
 - [0424程序选择颜色与启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/0424%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 - [0426程序如何从非起点启动，从任意一个起点开始](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%96%AD%E7%82%B9%E5%BC%80%E5%A7%8B.mp4)
 - [0505启动选择的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE-%E6%96%B0%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
-- [调整循迹参数的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%B0%83%E6%95%B4%E5%AF%BB%E8%BF%B9%E5%8F%82%E6%95%B0%E7%9A%84%E6%96%B9%E6%B3%95.mp4)
+- [调整循迹PID参数的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%B0%83%E6%95%B4%E5%AF%BB%E8%BF%B9%E5%8F%82%E6%95%B0%E7%9A%84%E6%96%B9%E6%B3%95.mp4)
 
 
 ### 主体函数解析
@@ -70,9 +76,12 @@ sidebar_position: 3
 
 ![函数解析11](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%80%89%E6%8B%A9%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F.png)
 
+![函数解析12](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%8E%A7%E5%88%B6%E5%B0%8F%E8%BD%A6%E8%A1%8C%E8%B5%B0%E5%A4%9A%E5%B0%91%E8%B7%9D%E7%A6%BB.png)
+
+
 ### 计划更新顺序
 - ~~加入不含有陀螺仪的转弯模块；~~
 - ~~加入非轴心转弯的模块；~~
-- 提升下寻迹的抓线性，优化下轮子速度PID+寻迹PID；
+- ~~提升下寻迹的抓线性，优化下轮子速度PID+寻迹PID；~~
 - 大家有需要记得和我沟通下需求；
 
