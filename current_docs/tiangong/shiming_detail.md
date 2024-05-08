@@ -86,7 +86,7 @@ sidebar_position: 4
 
 - [0505发送端代码-JY一中](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%8F%91%E9%80%81%E7%AB%AF%E4%BB%A3%E7%A0%81-JY%E4%B8%80%E4%B8%AD-0505.mix)
 
-- [发送器更新代码的方法-视频](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%8F%91%E9%80%81%E5%99%A8%E6%9B%B4%E6%96%B0.mp4)
+- [👓️发送器更新代码的方法-视频](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%8F%91%E9%80%81%E5%99%A8%E6%9B%B4%E6%96%B0.mp4)
 
 ![三点要注意下](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%B8%89%E4%B8%AA%E7%82%B9%E8%A6%81%E6%B3%A8%E6%84%8F%E4%B8%8B.png)
 
@@ -96,8 +96,9 @@ sidebar_position: 4
 上面步骤完成后直接按照如下视频启动。
 
 ### 使命召唤-米思齐程序-不使用摄像头实际操作视频（0505更新）
-- [车辆的初始化和软件启动（0505）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%B2%A1%E6%9C%89%E6%91%84%E5%83%8F%E5%A4%B4%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+- [👓️车辆的初始化和软件启动（0505）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%B2%A1%E6%9C%89%E6%91%84%E5%83%8F%E5%A4%B4%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 
+- [👓️到手操作视频-无需摄像头版本（0508）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E4%BD%BF%E5%91%BD%E5%8F%AC%E5%94%A4%20%E6%95%99%E7%A8%8B.mp4)
 
 电脑端软件的使用：
 

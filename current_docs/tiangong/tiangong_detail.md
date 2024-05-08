@@ -15,7 +15,7 @@ sidebar_position: 3
 ## 地图构建与机器人启动
 ![地图构建节点](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
 ![启动的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%872.JPG)
-- [启动机器人视频教程（0424及其之前代码）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+- [👓️启动机器人视频教程（0424及其之前代码）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 
 
 ## 软件安装与函数解析
@@ -54,12 +54,12 @@ sidebar_position: 3
 - 0508程序-增加可以不依靠陀螺仪的走直线；
 - 用于装配车子测试舵机电机程序-按下第一次初始化舵机角度，再次按下前进一段距离后退一段距离；
 
-### 天宫建设-操作视频（点击链接可播放）
-- [初始化底部灰度传感器](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%81%B0%E5%BA%A6.mp4)
-- [0424程序选择颜色与启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/0424%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
-- [0426程序如何从非起点启动，从任意一个起点开始](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%96%AD%E7%82%B9%E5%BC%80%E5%A7%8B.mp4)
-- [0505启动选择的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE-%E6%96%B0%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
-- [调整循迹PID参数的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%B0%83%E6%95%B4%E5%AF%BB%E8%BF%B9%E5%8F%82%E6%95%B0%E7%9A%84%E6%96%B9%E6%B3%95.mp4)
+### 天宫建设-操作视频👓️（点击链接可播放）
+- [👓️初始化底部灰度传感器](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%81%B0%E5%BA%A6.mp4)
+- [👓️0424程序选择颜色与启动](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/0424%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+- [👓️0426程序如何从非起点启动，从任意一个起点开始](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%96%AD%E7%82%B9%E5%BC%80%E5%A7%8B.mp4)
+- [👓️0505启动选择的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE-%E6%96%B0%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+- [👓️调整循迹PID参数的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%B0%83%E6%95%B4%E5%AF%BB%E8%BF%B9%E5%8F%82%E6%95%B0%E7%9A%84%E6%96%B9%E6%B3%95.mp4)
 
 
 ### 主体函数解析
