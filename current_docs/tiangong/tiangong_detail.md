@@ -38,8 +38,9 @@ sidebar_position: 3
 - [0505程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0505.mix)
 - [0508程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0508.mix)
 
+https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0511.mix
 
-
+- [0511程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianShe0511.mix)
 
 - [用于装配车子测试舵机电机程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/TianGongJianSZhuangPei.mix)
 #### 更新说明
@@ -77,6 +78,11 @@ sidebar_position: 3
 ![函数解析11](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%80%89%E6%8B%A9%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F.png)
 
 ![函数解析12](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E6%8E%A7%E5%88%B6%E5%B0%8F%E8%BD%A6%E8%A1%8C%E8%B5%B0%E5%A4%9A%E5%B0%91%E8%B7%9D%E7%A6%BB.png)
+
+![函数解析13](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%99%80%E8%9E%BA%E4%BB%AA%E9%80%9F%E5%BA%A6%E7%9B%B4%E8%B5%B0.png)
+
+![函数解析14](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E8%88%B5%E6%9C%BA%E7%9A%84%E6%8E%A7%E5%88%B6.png)
+
 
 
 ### 计划更新顺序
