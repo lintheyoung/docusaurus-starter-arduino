@@ -87,6 +87,7 @@ sidebar_position: 3
 ### 固件恢复软件
 - [UNO R4 固件](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/UNO%20R4%20MINI.zip)
 - [Arduino IDE](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/arduino-ide_2.3.2_Windows_64bit.exe)
+- [视频中提到的Hello World程序](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/gujianhuifu.zip)
 
 ### 计划更新顺序
 - ~~加入不含有陀螺仪的转弯模块；~~
