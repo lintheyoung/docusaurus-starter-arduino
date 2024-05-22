@@ -84,8 +84,9 @@ sidebar_position: 3
 ![函数解析13](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E9%99%80%E8%9E%BA%E4%BB%AA%E9%80%9F%E5%BA%A6%E7%9B%B4%E8%B5%B0.png)
 
 
-
-
+### 固件恢复软件
+- [UNO R4 固件](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/UNO%20R4%20MINI.zip)
+- [Arduino IDE](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/arduino-ide_2.3.2_Windows_64bit.exe)
 
 ### 计划更新顺序
 - ~~加入不含有陀螺仪的转弯模块；~~
