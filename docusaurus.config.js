@@ -73,8 +73,22 @@ module.exports = {
       hideOnScroll: true,
     },
     footer: {
-      style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()}. Distributed by BSD 3-Clause License`,
+      style: 'dark', // 或 'light'
+      copyright: `
+        <div>
+          <div>Copyright © ${new Date().getFullYear()} DeDeMaker.</div>
+          <div>
+            <a 
+              href="https://beian.miit.gov.cn/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style="color: inherit; text-decoration: underline;"
+            >
+              粤ICP备2024334862号-1
+            </a>
+          </div>
+        </div>
+      `,
     },
     prism: {
       additionalLanguages: ['arduino'],
