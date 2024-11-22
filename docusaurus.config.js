@@ -84,7 +84,7 @@ module.exports = {
               rel="noopener noreferrer"
               style="color: inherit; text-decoration: underline;"
             >
-              粤ICP备2024334862号-1
+              粤ICP备2024334862号
             </a>
           </div>
         </div>
