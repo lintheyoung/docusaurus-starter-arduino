@@ -1,10 +1,10 @@
 ---
-id: tiangong
+id: tiangong-2025
 sidebar_position: 2
 ---
 
-# 2024 天宫建设资料汇总
-![天宫建设2024](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE2024%E4%B8%BB%E5%9B%BE.png)
+# 2025 天宫建设资料汇总
+![天宫建设2025](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE2024%E4%B8%BB%E5%9B%BE.png)
 
 # 图文教程（0409更新）
 ## 地图构建与机器人启动
