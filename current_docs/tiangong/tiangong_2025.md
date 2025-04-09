@@ -10,13 +10,19 @@ sidebar_position: 2
 ## 地图构建与机器人启动
 ![地图构建节点](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE2025/%E5%B9%BB%E7%81%AF%E7%89%871.JPG)
 ![启动的方法](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/2024%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE/%E5%B9%BB%E7%81%AF%E7%89%872.JPG)
-- [👓️启动机器人视频教程（0424及其之前代码）](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
+- [👓️启动机器人视频教程](https://dedemaker-1255717351.cos.ap-nanjing.myqcloud.com/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%90%AF%E5%8A%A8%E6%96%B9%E6%B3%95.mp4)
 
 
 ## 软件安装与函数解析
 ### Arduino安装（待更新）
-- [Arduino IDE下载）](https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.5_Windows_64bit.exe)
+- [（Arduino IDE下载）](https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.5_Windows_64bit.exe)
 下载后解压双击打开**exe**即可，全部都是直接下一步+是；
+
+- 选择Arduino UNO R4
+![选择板子](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE2025/6842505335688d21b44de98522e8721.png)
+
+- 使用的方法
+![函数解析2](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/%E5%A4%A9%E5%AE%AB%E5%BB%BA%E8%AE%BE2025/104efed19122b0f3bcef53b8932d314.png)
 
 ### Arduino UNO R4驱动安装
 如果电脑没有自动安装对应驱动，需要手动安装一下，安装方法如下：
